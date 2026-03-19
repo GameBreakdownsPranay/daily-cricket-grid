@@ -9,6 +9,11 @@ import { fileURLToPath } from "url"
 
 dotenv.config()
 
+if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
+  console.error("Missing Supabase env variables");
+  process.exit(1);
+}
+
 const DEV_MODE = true
 
 const app = express()
@@ -240,7 +245,7 @@ console.log("DB RESULTS:", data)
 
   /* ADD DEBUG HERE */
 console.log("INPUT:", input)
-console.log("VALID ANSWERS:", data.map(d => d.player_name))
+console.log("VALID ANSWERS:", (data || []).map(d => d.player_name))
 
   if (error) {
     return res.status(500).json({ error: error.message })
@@ -390,14 +395,16 @@ const cols = grid.cols.map(normalize)
 
 async function startServer() {
 
-  await loadMetricKeys()
-  await loadAxisRegistry()
-  loadSchedule()
+  await loadMetricKeys();
+  await loadAxisRegistry();
+  loadSchedule();
 
-  app.listen(3000, () => {
-    console.log("Server running on port 3000")
-  })
+  const PORT = process.env.PORT || 3000;
 
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+  });
 }
 
-startServer()
+// ✅ call it here (outside)
+startServer();
