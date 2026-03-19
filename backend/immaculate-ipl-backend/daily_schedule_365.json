@@ -1,0 +1,5842 @@
+[
+  {
+    "day": 0,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Delhi Capitals",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 1,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 2,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "wickets_gt_50",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "New Zealand",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 3,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "England",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 4,
+    "shape": "m3f3",
+    "rows": [
+      "bowled_wkts_ge_20",
+      "maiden_overs_ge_1",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Rajasthan Royals",
+      "Gujarat Lions"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 5,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 6,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_century",
+      "metric_3_sixes_over",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 7,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 8,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Pune Warriors India",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 9,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_15_wickets_season",
+      "has_300_runs_death_overs",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 10,
+    "shape": "f3c3",
+    "rows": [
+      "Lucknow Super Giants",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 11,
+    "shape": "m3f3",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "death_wkts_ge_20",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 12,
+    "shape": "f6",
+    "rows": [
+      "Pune Warriors India",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 13,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_3_catches",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 14,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 15,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 16,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "has_3_catches",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "England",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 17,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Australia",
+      "New Zealand",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 18,
+    "shape": "m3f3",
+    "rows": [
+      "bowled_wkts_ge_20",
+      "wickets_gt_50",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Rajasthan Royals",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 19,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 20,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_15_wickets_season",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 21,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 22,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 23,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_century",
+      "runs_gt_2000",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 24,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "India",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 25,
+    "shape": "m3f3",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "bowled_wkts_ge_20",
+      "maiden_overs_ge_1"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Rising Pune Supergiant",
+      "Deccan Chargers"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 26,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 27,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "fiftyplus_scores_ge_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "New Zealand",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 28,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 29,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 30,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "death_wkts_ge_20",
+      "has_3_wkts_match",
+      "has_century"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 31,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "New Zealand",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 32,
+    "shape": "m3f3",
+    "rows": [
+      "lbw_wkts_ge_10",
+      "caught_wkts_ge_30",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 33,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 34,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "bowled_wkts_ge_20",
+      "runs_gt_2000",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 35,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Pune Warriors India",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 36,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 37,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "ducks_ge_5_wk_or_bat",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 38,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "India",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 39,
+    "shape": "m3f3",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "metric_pom_3plus",
+      "death_wkts_ge_20"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Sunrisers Hyderabad",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 40,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 41,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_3_catches",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 42,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 43,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 44,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "ducks_ge_5_wk_or_bat",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "India",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 45,
+    "shape": "f3c3",
+    "rows": [
+      "Deccan Chargers",
+      "Delhi Capitals",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 46,
+    "shape": "m3f3",
+    "rows": [
+      "has_3_wkts_match",
+      "metric_3_sixes_over",
+      "maiden_overs_ge_1"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 47,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 48,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "metric_pom_3plus",
+      "has_century"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "England",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 49,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Gujarat Lions",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 50,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 51,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "fiftyplus_scores_ge_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "England",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 52,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "India",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 53,
+    "shape": "m3f3",
+    "rows": [
+      "stumped_wkts_ge_3",
+      "caught_wkts_ge_30",
+      "metric_30_powerplay_wickets"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 54,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 55,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "death_wkts_ge_20",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Australia",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 56,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 57,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 58,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "has_3_catches",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 59,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Pune Warriors India",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Australia",
+      "New Zealand",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 60,
+    "shape": "m3f3",
+    "rows": [
+      "stumped_wkts_ge_3",
+      "ducks_ge_5_wk_or_bat",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Chennai Super Kings",
+      "Rajasthan Royals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 61,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 62,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "metric_3_sixes_over",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 63,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 64,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 65,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "metric_pom_3plus",
+      "has_4_fours_over"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 66,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "India",
+      "New Zealand",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 67,
+    "shape": "m3f3",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "ducks_ge_5_wk_or_bat",
+      "has_15_wickets_season"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Sunrisers Hyderabad",
+      "Kolkata Knight Riders"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 68,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 69,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "has_3_catches",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "India",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 70,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 71,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 72,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "wickets_gt_50",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 73,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "New Zealand",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 74,
+    "shape": "m3f3",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "ducks_ge_5_wk_or_bat",
+      "bowled_wkts_ge_20"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Rising Pune Supergiant",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 75,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 76,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "has_3_wkts_match",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "England",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 77,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 78,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 79,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "fiftyplus_scores_ge_5",
+      "has_century"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 80,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "India",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 81,
+    "shape": "m3f3",
+    "rows": [
+      "stumped_wkts_ge_3",
+      "has_300_runs_death_overs",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Delhi Capitals",
+      "Chennai Super Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 82,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 83,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_4_fours_over",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 84,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 85,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 86,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "has_3_catches",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 87,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "England",
+      "India",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 88,
+    "shape": "m3f3",
+    "rows": [
+      "caught_wkts_ge_30",
+      "has_century",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 89,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 90,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "metric_pom_3plus",
+      "caught_and_bowled_ge_3"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 91,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kochi Tuskers Kerala",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 92,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 93,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_300_runs_death_overs",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "India",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 94,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "New Zealand",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 95,
+    "shape": "m3f3",
+    "rows": [
+      "has_15_wickets_season",
+      "caught_wkts_ge_30",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Rising Pune Supergiant",
+      "Punjab Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 96,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 97,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_century",
+      "caught_and_bowled_ge_3",
+      "death_wkts_ge_20"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 98,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 99,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 100,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "caught_wkts_ge_30",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "South Africa",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 101,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "India",
+      "New Zealand",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 102,
+    "shape": "m3f3",
+    "rows": [
+      "has_15_wickets_season",
+      "fiftyplus_scores_ge_5",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India",
+      "Chennai Super Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 103,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 104,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "wickets_gt_50",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Australia",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 105,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 106,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Gujarat Titans",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 107,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_century",
+      "metric_pom_3plus",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 108,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 109,
+    "shape": "m3f3",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "fiftyplus_scores_ge_5",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 110,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 111,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_century",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Royal Challengers Bengaluru",
+      "South Africa",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 112,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 113,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 114,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "matches_le_5",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Australia",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 115,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "England",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 116,
+    "shape": "m3f3",
+    "rows": [
+      "has_300_runs_death_overs",
+      "has_3_wkts_match",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 117,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 118,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "runs_400_seasons_ge_1",
+      "has_4_fours_over"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 119,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 120,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 121,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "metric_3_sixes_over",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 122,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "England",
+      "New Zealand",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 123,
+    "shape": "m3f3",
+    "rows": [
+      "runs_gt_2000",
+      "wickets_gt_50",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Lucknow Super Giants",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 124,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 125,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "fiftyplus_scores_ge_5",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "South Africa",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 126,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Lucknow Super Giants",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 127,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 128,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "metric_3_sixes_over",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 129,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "India",
+      "New Zealand",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 130,
+    "shape": "m3f3",
+    "rows": [
+      "has_300_runs_death_overs",
+      "caught_wkts_ge_30",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Kolkata Knight Riders"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 131,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 132,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "runs_gt_2000",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 133,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Kolkata Knight Riders"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 134,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 135,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_3_catches",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "South Africa",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 136,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "England",
+      "India",
+      "New Zealand"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 137,
+    "shape": "m3f3",
+    "rows": [
+      "has_3_wkts_match",
+      "has_300_runs_death_overs",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Chennai Super Kings",
+      "Pune Warriors India"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 138,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 139,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "caught_wkts_ge_30",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 140,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 141,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 142,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_15_wickets_season",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 143,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "England",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 144,
+    "shape": "m3f3",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "fiftyplus_scores_ge_5",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 145,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 146,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "matches_le_5",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "South Africa",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 147,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 148,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 149,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_pom_3plus",
+      "has_15_wickets_season",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Sri Lanka",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 150,
+    "shape": "f3c3",
+    "rows": [
+      "Lucknow Super Giants",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 151,
+    "shape": "m3f3",
+    "rows": [
+      "runs_gt_2000",
+      "runs_400_seasons_ge_1",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Deccan Chargers",
+      "Chennai Super Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 152,
+    "shape": "f6",
+    "rows": [
+      "Rajasthan Royals",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 153,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_15_wickets_season",
+      "metric_3_sixes_over",
+      "stumped_wkts_ge_3"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 154,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "Pune Warriors India",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 155,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 156,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_15_wickets_season",
+      "matches_le_5",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 157,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 158,
+    "shape": "m3f3",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_4_fours_over",
+      "metric_30_powerplay_wickets"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 159,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 160,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "has_3_catches",
+      "caught_and_bowled_ge_3"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 161,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 162,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 163,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "ducks_ge_5_wk_or_bat",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 164,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "South Africa",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 165,
+    "shape": "m3f3",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_century",
+      "has_15_wickets_season"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "Gujarat Lions",
+      "Kolkata Knight Riders"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 166,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 167,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "has_3_wkts_match",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "West Indies",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 168,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 169,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 170,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "has_3_catches",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 171,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Australia",
+      "New Zealand",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 172,
+    "shape": "m3f3",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "caught_wkts_ge_30",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "Delhi Capitals",
+      "Chennai Super Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 173,
+    "shape": "f6",
+    "rows": [
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 174,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "maiden_overs_ge_1",
+      "metric_pom_3plus",
+      "death_wkts_ge_20"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 175,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 176,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 177,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "has_15_wickets_season",
+      "metric_30_powerplay_wickets"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 178,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "New Zealand",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 179,
+    "shape": "m3f3",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "metric_3_sixes_over",
+      "has_century"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 180,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 181,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_catches",
+      "caught_wkts_ge_30",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 182,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Gujarat Titans",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 183,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 184,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_catches",
+      "has_3_wkts_match",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 185,
+    "shape": "f3c3",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "South Africa",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 186,
+    "shape": "m3f3",
+    "rows": [
+      "has_4_fours_over",
+      "matches_le_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Delhi Capitals",
+      "Rajasthan Royals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 187,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 188,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "ducks_ge_5_wk_or_bat",
+      "maiden_overs_ge_1"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 189,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 190,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Pune Warriors India",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 191,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_4_fours_over",
+      "has_3_wkts_match",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "South Africa",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 192,
+    "shape": "f3c3",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 193,
+    "shape": "m3f3",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "bowled_wkts_ge_20",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Delhi Capitals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 194,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 195,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "metric_pom_3plus",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Royal Challengers Bengaluru",
+      "South Africa",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 196,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 197,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 198,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "fiftyplus_scores_ge_5",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "England",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 199,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "India",
+      "New Zealand",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 200,
+    "shape": "m3f3",
+    "rows": [
+      "runs_gt_2000",
+      "has_3_catches",
+      "bowled_wkts_ge_20"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 201,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 202,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_300_runs_death_overs",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 203,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 204,
+    "shape": "f6",
+    "rows": [
+      "Lucknow Super Giants",
+      "Pune Warriors India",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 205,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "matches_le_5",
+      "has_4_fours_over"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 206,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "New Zealand",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 207,
+    "shape": "m3f3",
+    "rows": [
+      "caught_and_bowled_ge_3",
+      "bowled_wkts_ge_20",
+      "has_15_wickets_season"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Rising Pune Supergiant",
+      "Punjab Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 208,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 209,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "has_century",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 210,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 211,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 212,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_catches",
+      "metric_pom_3plus",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Australia",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 213,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "England",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 214,
+    "shape": "m3f3",
+    "rows": [
+      "has_15_wickets_season",
+      "metric_30_powerplay_wickets",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Gujarat Lions",
+      "Mumbai Indians"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 215,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 216,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "metric_pom_3plus",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 217,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 218,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 219,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "runs_gt_2000",
+      "has_century"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "South Africa",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 220,
+    "shape": "f3c3",
+    "rows": [
+      "Pune Warriors India",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Australia",
+      "India",
+      "New Zealand"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 221,
+    "shape": "m3f3",
+    "rows": [
+      "metric_3_sixes_over",
+      "metric_30_powerplay_wickets",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Sunrisers Hyderabad",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 222,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Kolkata Knight Riders"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 223,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "matches_le_5",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "South Africa",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 224,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 225,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 226,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_catches",
+      "has_century",
+      "lbw_wkts_ge_10"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 227,
+    "shape": "f3c3",
+    "rows": [
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "South Africa",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 228,
+    "shape": "m3f3",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "has_300_runs_death_overs",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 229,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 230,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "death_wkts_ge_20",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 231,
+    "shape": "f6",
+    "rows": [
+      "Lucknow Super Giants",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 232,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 233,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "matches_le_5",
+      "metric_pom_3plus",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "England",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 234,
+    "shape": "f3c3",
+    "rows": [
+      "Mumbai Indians",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "India",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 235,
+    "shape": "m3f3",
+    "rows": [
+      "runs_gt_2000",
+      "has_century",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Royal Challengers Bengaluru",
+      "Rajasthan Royals",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 236,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Kolkata Knight Riders"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 237,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "has_3_wkts_match",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 238,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 239,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Kolkata Knight Riders"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 240,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_pom_3plus",
+      "has_3_wkts_match",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 241,
+    "shape": "f3c3",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 242,
+    "shape": "m3f3",
+    "rows": [
+      "has_4_fours_over",
+      "death_wkts_ge_20",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Royal Challengers Bengaluru",
+      "Kochi Tuskers Kerala",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 243,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 244,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "has_3_catches",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "South Africa",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 245,
+    "shape": "f6",
+    "rows": [
+      "Pune Warriors India",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 246,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 247,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "fiftyplus_scores_ge_5",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 248,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "South Africa"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 249,
+    "shape": "m3f3",
+    "rows": [
+      "has_15_wickets_season",
+      "has_3_wkts_match",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "Gujarat Titans",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 250,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 251,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_3_sixes_over",
+      "fiftyplus_scores_ge_5",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "West Indies",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 252,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 253,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 254,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "runs_400_seasons_ge_1",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 255,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "New Zealand",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 256,
+    "shape": "m3f3",
+    "rows": [
+      "has_4_fours_over",
+      "has_300_runs_death_overs",
+      "has_15_wickets_season"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "Royal Challengers Bengaluru",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 257,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 258,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "stumped_wkts_ge_3",
+      "wickets_gt_50",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 259,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 260,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 261,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "caught_wkts_ge_30",
+      "has_15_wickets_season",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 262,
+    "shape": "f3c3",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "New Zealand",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 263,
+    "shape": "m3f3",
+    "rows": [
+      "stumped_wkts_ge_3",
+      "runs_gt_2000",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Chennai Super Kings",
+      "Gujarat Lions"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 264,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 265,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "matches_le_5",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 266,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 267,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 268,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "has_3_wkts_match",
+      "maiden_overs_ge_1"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 269,
+    "shape": "f3c3",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "India",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 270,
+    "shape": "m3f3",
+    "rows": [
+      "wickets_gt_50",
+      "matches_le_5",
+      "death_wkts_ge_20"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Lucknow Super Giants",
+      "Chennai Super Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 271,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 272,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "has_3_wkts_match",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "India",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 273,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Gujarat Titans",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Mumbai Indians"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 274,
+    "shape": "f6",
+    "rows": [
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Kolkata Knight Riders",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 275,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_15_wickets_season",
+      "fiftyplus_scores_ge_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "South Africa",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 276,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Delhi Capitals"
+    ],
+    "cols": [
+      "Australia",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 277,
+    "shape": "m3f3",
+    "rows": [
+      "has_300_runs_death_overs",
+      "stumped_wkts_ge_3",
+      "runs_400_seasons_ge_1"
+    ],
+    "cols": [
+      "Rajasthan Royals",
+      "Rising Pune Supergiant",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 278,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 279,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "caught_wkts_ge_30",
+      "matches_le_5",
+      "fiftyplus_scores_ge_5"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 280,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 281,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 282,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "fiftyplus_scores_ge_5",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "South Africa",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 283,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "England",
+      "India",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 284,
+    "shape": "m3f3",
+    "rows": [
+      "death_wkts_ge_20",
+      "has_3_catches",
+      "has_4_fours_over"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Royal Challengers Bengaluru",
+      "Punjab Kings"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 285,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 286,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "stumped_wkts_ge_3",
+      "caught_and_bowled_ge_3"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 287,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Kolkata Knight Riders"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 288,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 289,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_century",
+      "wickets_gt_50",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 290,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "England",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 291,
+    "shape": "m3f3",
+    "rows": [
+      "has_300_runs_death_overs",
+      "fiftyplus_scores_ge_5",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 292,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Mumbai Indians",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 293,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "maiden_overs_ge_1",
+      "death_wkts_ge_20",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "West Indies",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 294,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Titans",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 295,
+    "shape": "f6",
+    "rows": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 296,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "runs_gt_2000",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "India",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 297,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "England",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 298,
+    "shape": "m3f3",
+    "rows": [
+      "caught_wkts_ge_30",
+      "metric_30_powerplay_wickets",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 299,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 300,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "metric_pom_3plus",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "India",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 301,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 302,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Delhi Capitals",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Mumbai Indians",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 303,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "metric_pom_3plus",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "India",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 304,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 305,
+    "shape": "m3f3",
+    "rows": [
+      "has_3_wkts_match",
+      "death_wkts_ge_20",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Delhi Capitals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 306,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 307,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_pom_3plus",
+      "runs_gt_2000",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "South Africa",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 308,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kochi Tuskers Kerala",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 309,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 310,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_gt_2000",
+      "runs_400_seasons_ge_1",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Australia",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 311,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "India",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 312,
+    "shape": "m3f3",
+    "rows": [
+      "has_4_fours_over",
+      "ducks_ge_5_wk_or_bat",
+      "caught_wkts_ge_30"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 313,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 314,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "maiden_overs_ge_1",
+      "metric_3_sixes_over",
+      "lbw_wkts_ge_10"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 315,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 316,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Kochi Tuskers Kerala",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 317,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "caught_wkts_ge_30",
+      "matches_le_5"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "South Africa",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 318,
+    "shape": "f3c3",
+    "rows": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "New Zealand"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 319,
+    "shape": "m3f3",
+    "rows": [
+      "death_wkts_ge_20",
+      "ducks_ge_5_wk_or_bat",
+      "wickets_gt_50"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Lucknow Super Giants",
+      "Kochi Tuskers Kerala"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 320,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Rising Pune Supergiant",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 321,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "maiden_overs_ge_1",
+      "has_4_fours_over",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 322,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 323,
+    "shape": "f6",
+    "rows": [
+      "Mumbai Indians",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Lucknow Super Giants",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 324,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_catches",
+      "caught_wkts_ge_30",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 325,
+    "shape": "f3c3",
+    "rows": [
+      "Deccan Chargers",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Australia",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 326,
+    "shape": "m3f3",
+    "rows": [
+      "has_century",
+      "has_4_fours_over",
+      "has_300_runs_death_overs"
+    ],
+    "cols": [
+      "Royal Challengers Bengaluru",
+      "Rising Pune Supergiant",
+      "Pune Warriors India"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 327,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Lucknow Super Giants",
+      "Punjab Kings"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 328,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "death_wkts_ge_20",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Australia",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 329,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 330,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Gujarat Lions",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 331,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "has_15_wickets_season",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Australia",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 332,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "England",
+      "New Zealand",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 333,
+    "shape": "m3f3",
+    "rows": [
+      "has_3_catches",
+      "metric_pom_3plus",
+      "bowled_wkts_ge_20"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Gujarat Lions",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 334,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 335,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "matches_le_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "West Indies",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 336,
+    "shape": "f6",
+    "rows": [
+      "Delhi Capitals",
+      "Gujarat Titans",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 337,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Mumbai Indians"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 338,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "metric_pom_3plus",
+      "has_4_fours_over",
+      "has_3_wkts_match"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "England",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 339,
+    "shape": "f3c3",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "New Zealand",
+      "Sri Lanka",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 340,
+    "shape": "m3f3",
+    "rows": [
+      "lbw_wkts_ge_10",
+      "matches_le_5",
+      "metric_3_sixes_over"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Chennai Super Kings",
+      "Delhi Capitals"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 341,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Pune Warriors India",
+      "Rising Pune Supergiant"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 342,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "has_300_runs_death_overs",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "South Africa",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 343,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Kolkata Knight Riders",
+      "Punjab Kings"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "Kochi Tuskers Kerala",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 344,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Gujarat Lions",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 345,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "matches_le_5",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Sri Lanka",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 346,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "England",
+      "South Africa",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 347,
+    "shape": "m3f3",
+    "rows": [
+      "fiftyplus_scores_ge_5",
+      "has_15_wickets_season",
+      "has_century"
+    ],
+    "cols": [
+      "Rising Pune Supergiant",
+      "Gujarat Titans",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 348,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 349,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_3_wkts_match",
+      "caught_wkts_ge_30",
+      "metric_pom_3plus"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "India",
+      "AR"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 350,
+    "shape": "f6",
+    "rows": [
+      "Punjab Kings",
+      "Rajasthan Royals",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Gujarat Titans",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 351,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Pune Warriors India"
+    ],
+    "cols": [
+      "Kolkata Knight Riders",
+      "Mumbai Indians",
+      "Sunrisers Hyderabad"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 352,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "fiftyplus_scores_ge_5",
+      "has_4_fours_over"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "West Indies",
+      "BAT"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 353,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "Sri Lanka"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 354,
+    "shape": "m3f3",
+    "rows": [
+      "caught_wkts_ge_30",
+      "matches_le_5",
+      "ducks_ge_5_wk_or_bat"
+    ],
+    "cols": [
+      "Lucknow Super Giants",
+      "Gujarat Lions",
+      "Gujarat Titans"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 355,
+    "shape": "f6",
+    "rows": [
+      "Deccan Chargers",
+      "Rising Pune Supergiant",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Rajasthan Royals"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 356,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "has_300_runs_death_overs",
+      "has_century",
+      "runs_gt_2000"
+    ],
+    "cols": [
+      "Mumbai Indians",
+      "West Indies",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 357,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Lions",
+      "Kochi Tuskers Kerala",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 358,
+    "shape": "f6",
+    "rows": [
+      "Kolkata Knight Riders",
+      "Pune Warriors India",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "Delhi Capitals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 359,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "wickets_gt_50",
+      "matches_le_5",
+      "bowled_wkts_ge_20"
+    ],
+    "cols": [
+      "Gujarat Titans",
+      "India",
+      "BOWL"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 360,
+    "shape": "f3c3",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Rajasthan Royals"
+    ],
+    "cols": [
+      "Australia",
+      "England",
+      "West Indies"
+    ],
+    "row_type": "franchise",
+    "col_type": "country"
+  },
+  {
+    "day": 361,
+    "shape": "m3f3",
+    "rows": [
+      "runs_400_seasons_ge_1",
+      "metric_3_sixes_over",
+      "death_wkts_ge_20"
+    ],
+    "cols": [
+      "Sunrisers Hyderabad",
+      "Gujarat Lions",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "metric",
+    "col_type": "franchise"
+  },
+  {
+    "day": 362,
+    "shape": "f6",
+    "rows": [
+      "Gujarat Titans",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants"
+    ],
+    "cols": [
+      "Delhi Capitals",
+      "Mumbai Indians",
+      "Royal Challengers Bengaluru"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  },
+  {
+    "day": 363,
+    "shape": "m3f1c1p1",
+    "rows": [
+      "ducks_ge_5_wk_or_bat",
+      "fiftyplus_scores_ge_5",
+      "has_3_catches"
+    ],
+    "cols": [
+      "Deccan Chargers",
+      "England",
+      "WK"
+    ],
+    "row_type": "metric",
+    "col_type": "mixed"
+  },
+  {
+    "day": 364,
+    "shape": "f6",
+    "rows": [
+      "Chennai Super Kings",
+      "Punjab Kings",
+      "Sunrisers Hyderabad"
+    ],
+    "cols": [
+      "Pune Warriors India",
+      "Rajasthan Royals",
+      "Rising Pune Supergiant"
+    ],
+    "row_type": "franchise",
+    "col_type": "franchise"
+  }
+]

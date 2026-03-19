@@ -1,0 +1,6 @@
+archive/
+node_modules/
+.env
+*.db
+dist/
+build/
