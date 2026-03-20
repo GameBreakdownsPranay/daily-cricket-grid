@@ -300,7 +300,7 @@ console.log("VALID ANSWERS:", (data || []).map(d => d.player_name))
 
 app.post("/completion", async (req, res) => {
 
-  const { grid_id } = req.body
+  const { grid_id } = req.query
 
   const { data, error } = await supabase.rpc("increment_completion", {
     p_grid_id: grid_id
@@ -353,7 +353,7 @@ app.post("/rarity_score", async (req, res) => {
 
 /* ---------------- GRID ANSWERS ---------------- */
 
-app.post("/grid_answers", async (req, res) => {
+app.get("/grid_answers", async (req, res) => {
 
   const { grid_id } = req.body
 
