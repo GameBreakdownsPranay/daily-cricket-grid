@@ -34,15 +34,17 @@ function AnswersPage() {
       setColKeys(data.cols.map((c:any) => c.key))
       setRowKeys(data.rows.map((r:any) => r.key))
 
-      return fetch("/grid_answers", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          grid_id: effectiveGridId
-        })
-      })
+      const BASE_URL = import.meta.env.VITE_API_URL;
+
+return fetch(`${BASE_URL}/grid_answers`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    grid_id: effectiveGridId
+  })
+});
 
     })
     .then(res => res.json())

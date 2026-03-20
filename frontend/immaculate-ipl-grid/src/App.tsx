@@ -34,6 +34,8 @@ function GamePage() {
 
   const navigate = useNavigate();
 
+  const BASE_URL = import.meta.env.VITE_API_URL;
+
   const [grid, setGrid] = useState<{
   grid_id:number,
   rows:{key:string,label:string}[],
@@ -55,10 +57,14 @@ useEffect(() => {
       const params = new URLSearchParams(window.location.search)
       const gridOverride = params.get("grid")
 
-      const url = gridOverride ? `/grid?grid=${gridOverride}` : "/grid"
+      let data;
 
-      const res = await fetch(url)
-      const data = await res.json()
+if (gridOverride) {
+  const res = await fetch(`${BASE_URL}/grid?grid=${gridOverride}`);
+  data = await res.json();
+} else {
+  data = await fetchGrid();
+}
 
       console.log("GRID DATA:", data)
 
@@ -113,7 +119,7 @@ useEffect(() => {
 
   async function finalizeGame() {
 
-    await fetch("/completion", {
+    await fetch(`${BASE_URL}/completion`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -135,16 +141,16 @@ useEffect(() => {
 
     });
 
-    const res = await fetch("/rarity_score", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        grid_id: GRID_ID,
-        cells: cells
-      })
-    });
+    const res = await fetch(`${BASE_URL}/rarity_score`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    grid_id: GRID_ID,
+    cells: cells
+  })
+});
 
     const data = await res.json();
 
@@ -194,18 +200,18 @@ useEffect(() => {
 
     try {
 
-      const response = await fetch("/validate", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          grid_id: GRID_ID,
-          row_value: rowValue,
-          col_value: colValue,
-          player: trimmed
-        })
-      });
+      const response = await fetch(`${BASE_URL}/validate`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    grid_id: GRID_ID,
+    row_value: rowValue,
+    col_value: colValue,
+    player: trimmed
+  })
+});
 
       const data = await response.json();
 
@@ -392,12 +398,11 @@ if (data.status !== "valid") {
   className="give-up"
   onClick={async () => {
 
-    await fetch("/giveup", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ grid_id: GRID_ID })
-    });
-
+    await fetch(`${BASE_URL}/giveup`, {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify({ grid_id: GRID_ID })
+});
     const cells = Object.entries(lockedCells).map(([key, player]) => {
       const [rowIndex, colIndex] = key.split("-").map(Number);
 
@@ -408,16 +413,16 @@ if (data.status !== "valid") {
       };
     });
 
-    const res = await fetch("/rarity_score", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        grid_id: GRID_ID,
-        cells: cells
-      })
-    });
+    const res = await fetch(`${BASE_URL}/rarity_score`, {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    grid_id: GRID_ID,
+    cells: cells
+  })
+});
 
     const data = await res.json();
     setRarityScore(data.average_rarity);
