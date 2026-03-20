@@ -92,7 +92,7 @@ return fetch(`${BASE_URL}/grid_answers`, {
                 {row}
               </div>
 
-              {columns.map((col, colIndex) => {
+              {columns.map((_, colIndex) => {
 
                 const key = `${rowKeys[rowIndex]}|${colKeys[colIndex]}`
                 const players = answers[key] || []

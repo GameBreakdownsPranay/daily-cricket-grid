@@ -324,10 +324,6 @@ if (data.status !== "valid") {
 
   const remainingAttempts = Math.max(0, RARITY_TURNS - attemptsUsed);
 
-  const formatYAxis = (name: string) => {
-    const parts = name.split("_");
-    return parts.join(" ");
-  };
 
   const formatCellLabel = (key: string) => {
     const [r, c] = key.split("-").map(Number);
