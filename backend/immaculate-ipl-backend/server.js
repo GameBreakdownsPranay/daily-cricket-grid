@@ -22,14 +22,7 @@ const app = express()
 
 app.set("trust proxy", 1)
 
-app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://daily-cricket-grid-c06m.vercel.app"
-  ],
-  methods: ["GET", "POST"],
-  allowedHeaders: ["Content-Type"]
-}));
+app.use(cors())
 
 app.use(express.json());
 
