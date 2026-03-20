@@ -318,7 +318,7 @@ app.post("/completion", async (req, res) => {
 
 app.post("/giveup", async (req, res) => {
 
-  const { grid_id } = req.body
+  const { grid_id } = req.query
 
   const { error } = await supabase.rpc("increment_giveup", {
     p_grid_id: grid_id
