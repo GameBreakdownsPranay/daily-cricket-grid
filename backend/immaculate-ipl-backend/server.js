@@ -355,7 +355,7 @@ app.post("/rarity_score", async (req, res) => {
 
 app.get("/grid_answers", async (req, res) => {
 
-  const { grid_id } = req.body
+  const grid_id = parseInt(req.query.grid_id)
 
   const grid = schedule.find(g => g.day === grid_id)
 
