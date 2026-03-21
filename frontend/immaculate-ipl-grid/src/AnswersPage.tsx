@@ -1,62 +1,60 @@
 import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 
+type CellData = {
+  row_idx: number
+  col_idx: number
+  player_count: number
+  players: string[]
+}
+
 function AnswersPage() {
 
   const { gridId } = useParams()
   const navigate = useNavigate()
 
-  const [answers, setAnswers] = useState<Record<string,string[]> | null>(null)
+  const [answers, setAnswers] = useState<CellData[] | null>(null)
   const [activePlayers, setActivePlayers] = useState<string[] | null>(null)
 
   const [columns, setColumns] = useState<string[]>([])
   const [rows, setRows] = useState<string[]>([])
 
-  const [rowKeys, setRowKeys] = useState<string[]>([])
-  const [colKeys, setColKeys] = useState<string[]>([])
-
   const params = new URLSearchParams(window.location.search)
   const gridOverride = params.get("grid")
 
   const gridUrl = gridOverride ? `/grid?grid=${gridOverride}` : "/grid"
-
   const effectiveGridId = gridOverride ? Number(gridOverride) : Number(gridId)
 
   useEffect(() => {
 
-  fetch(gridUrl)
-    .then(res => res.json())
-    .then(data => {
+    const BASE_URL = import.meta.env.VITE_API_URL;
 
-      setColumns(data.cols.map((c:any) => c.label))
-      setRows(data.rows.map((r:any) => r.label))
+    // 1. Fetch grid structure
+    fetch(gridUrl)
+      .then(res => res.json())
+      .then(data => {
 
-      setColKeys(data.cols.map((c:any) => c.key))
-      setRowKeys(data.rows.map((r:any) => r.key))
+        setColumns(data.cols.map((c:any) => c.label))
+        setRows(data.rows.map((r:any) => r.label))
 
-      const BASE_URL = import.meta.env.VITE_API_URL;
+        // 2. Fetch answers
+        return fetch(`${BASE_URL}/grid_answers?grid_id=${effectiveGridId}`)
+      })
+      .then(res => res.json())
+      .then((data: CellData[]) => {
+        console.log("GRID ANSWERS RESPONSE:", data)
+        setAnswers(data)
+      })
 
-return fetch(`${BASE_URL}/grid_answers`, {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json"
-  },
-  body: JSON.stringify({
-    grid_id: effectiveGridId
-  })
-});
-
-    })
-    .then(res => res.json())
-    .then(data => {
-      console.log("GRID ANSWERS RESPONSE:", data)
-      setAnswers(data)
-    })
-
-}, [effectiveGridId])
+  }, [effectiveGridId])
 
   if (!answers || rows.length === 0 || columns.length === 0) {
     return <div>Loading...</div>
+  }
+
+  // Helper: find cell data
+  const getCell = (r: number, c: number) => {
+    return answers.find(x => x.row_idx === r && x.col_idx === c)
   }
 
   return (
@@ -94,13 +92,14 @@ return fetch(`${BASE_URL}/grid_answers`, {
 
               {columns.map((_, colIndex) => {
 
-                const key = `${rowKeys[rowIndex]}|${colKeys[colIndex]}`
-                const players = answers[key] || []
+                const cell = getCell(rowIndex, colIndex)
+                const count = cell?.player_count || 0
+                const players = cell?.players || []
 
                 return (
 
                   <div
-                    key={key}
+                    key={`${rowIndex}-${colIndex}`}
                     className="cell"
                     style={{ cursor: "pointer" }}
                     onClick={() => setActivePlayers(players)}
@@ -114,7 +113,7 @@ return fetch(`${BASE_URL}/grid_answers`, {
                         fontSize: "1.25em"
                       }}
                     >
-                      {players.length}
+                      {count}
                     </span>
 
                   </div>
