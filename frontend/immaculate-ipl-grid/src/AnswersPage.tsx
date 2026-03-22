@@ -30,7 +30,7 @@ function AnswersPage() {
   useEffect(() => {
 
     // 1. Fetch grid structure
-    fetch(gridUrl)
+    fetch(`${BASE_URL}${gridUrl}`)
       .then(async (res) => {
         if (!res.ok) {
           const text = await res.text()
