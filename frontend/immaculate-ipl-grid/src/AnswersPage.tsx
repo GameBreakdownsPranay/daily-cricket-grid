@@ -25,25 +25,42 @@ function AnswersPage() {
   const gridUrl = gridOverride ? `/grid?grid=${gridOverride}` : "/grid"
   const effectiveGridId = gridOverride ? Number(gridOverride) : Number(gridId)
 
-  useEffect(() => {
+  const BASE_URL = import.meta.env.VITE_API_URL
 
-    const BASE_URL = import.meta.env.VITE_API_URL;
+  useEffect(() => {
 
     // 1. Fetch grid structure
     fetch(gridUrl)
-      .then(res => res.json())
+      .then(async (res) => {
+        if (!res.ok) {
+          const text = await res.text()
+          console.error("GRID FETCH ERROR:", text)
+          throw new Error("Grid fetch failed")
+        }
+        return res.json()
+      })
       .then(data => {
 
-        setColumns(data.cols.map((c:any) => c.label))
-        setRows(data.rows.map((r:any) => r.label))
+        setColumns(data.cols.map((c: any) => c.label))
+        setRows(data.rows.map((r: any) => r.label))
 
         // 2. Fetch answers
         return fetch(`${BASE_URL}/grid_answers?grid_id=${effectiveGridId}`)
       })
-      .then(res => res.json())
+      .then(async (res) => {
+        if (!res.ok) {
+          const text = await res.text()
+          console.error("GRID ANSWERS ERROR:", text)
+          throw new Error("Answers fetch failed")
+        }
+        return res.json()
+      })
       .then((data: CellData[]) => {
         console.log("GRID ANSWERS RESPONSE:", data)
         setAnswers(data)
+      })
+      .catch(err => {
+        console.error("FINAL ERROR:", err)
       })
 
   }, [effectiveGridId])
