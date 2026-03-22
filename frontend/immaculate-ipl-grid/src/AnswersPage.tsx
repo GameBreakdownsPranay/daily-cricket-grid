@@ -85,11 +85,11 @@ function AnswersPage() {
 
           <div className="axis axis-empty"></div>
 
-          {columns.map((col, colIndex) => (
-            <div key={colIndex} className="axis axis-col">
-              {col}
-            </div>
-          ))}
+          {columns.map((col) => (
+  <div key={col} className="axis axis-col">
+    {col}
+  </div>
+))}
 
           {rows.map((row, rowIndex) => (
 
@@ -99,7 +99,7 @@ function AnswersPage() {
                 {row}
               </div>
 
-              {columns.map((col, colIndex) => {
+              {columns.map((col) => {
 
                 // ✅ FIX: use key lookup instead of .find
                 const key = `${row}|${col}`
