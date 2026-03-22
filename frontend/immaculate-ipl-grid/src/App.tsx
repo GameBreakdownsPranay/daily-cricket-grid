@@ -56,13 +56,10 @@ useEffect(() => {
 
     try {
 
-      const params = new URLSearchParams(window.location.search)
-      const gridOverride = params.get("grid")
-
       let data;
 
-if (gridOverride) {
-  const res = await fetch(`${BASE_URL}/grid?grid=${gridOverride}`);
+if (DEV_MODE && gridId !== null) {
+  const res = await fetch(`${BASE_URL}/grid?grid=${gridId}`);
   data = await res.json();
 } else {
   data = await fetchGrid();
@@ -82,6 +79,12 @@ if (gridOverride) {
 
   loadGrid()
 
+}, [gridId])
+
+useEffect(() => {
+  if (DEV_MODE) {
+    setGridId(81)
+  }
 }, [])
   
 
@@ -350,32 +353,18 @@ if (data.status !== "valid") {
 
           <p className="grid-number">Grid #{GRID_ID + 1}</p>
 
-          {window.location.search.includes("grid") && (
-
+          {DEV_MODE && (
   <div style={{ marginTop: "8px", display: "flex", gap: "10px", justifyContent: "center" }}>
 
-    <button
-      onClick={() => {
-        const params = new URLSearchParams(window.location.search)
-        const g = Number(params.get("grid") ?? 0)
-        window.location.search = `?grid=${Math.max(0, g - 1)}`
-      }}
-    >
+    <button onClick={() => setGridId((g) => (g !== null ? g - 1 : 0))}>
       ← Prev
     </button>
 
-    <button
-      onClick={() => {
-        const params = new URLSearchParams(window.location.search)
-        const g = Number(params.get("grid") ?? 0)
-        window.location.search = `?grid=${g + 1}`
-      }}
-    >
+    <button onClick={() => setGridId((g) => (g !== null ? g + 1 : 1))}>
       Next →
     </button>
 
   </div>
-
 )}
 
           <p className="countdown">Next grid in: {timeLeft}</p>
