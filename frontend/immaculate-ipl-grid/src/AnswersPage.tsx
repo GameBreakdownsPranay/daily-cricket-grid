@@ -1,19 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 
-type CellData = {
-  row_idx: number
-  col_idx: number
-  player_count: number
-  players: string[]
-}
-
 function AnswersPage() {
 
   const { gridId } = useParams()
   const navigate = useNavigate()
 
-  const [answers, setAnswers] = useState<CellData[] | null>(null)
+  // ✅ FIX: answers is an object, not array
+  const [answers, setAnswers] = useState<Record<string, string[]> | null>(null)
   const [activePlayers, setActivePlayers] = useState<string[] | null>(null)
 
   const [columns, setColumns] = useState<string[]>([])
@@ -30,7 +24,7 @@ function AnswersPage() {
   useEffect(() => {
 
     // 1. Fetch grid structure
-    fetch(`${BASE_URL}${gridUrl}`)
+    fetch(gridUrl)
       .then(async (res) => {
         if (!res.ok) {
           const text = await res.text()
@@ -41,8 +35,11 @@ function AnswersPage() {
       })
       .then(data => {
 
-        setColumns(data.cols.map((c: any) => c.label))
-        setRows(data.rows.map((r: any) => r.label))
+        const cols = data.cols.map((c: any) => c.label)
+        const rowsArr = data.rows.map((r: any) => r.label)
+
+        setColumns(cols)
+        setRows(rowsArr)
 
         // 2. Fetch answers
         return fetch(`${BASE_URL}/grid_answers?grid_id=${effectiveGridId}`)
@@ -55,7 +52,7 @@ function AnswersPage() {
         }
         return res.json()
       })
-      .then((data: CellData[]) => {
+      .then((data: Record<string, string[]>) => {
         console.log("GRID ANSWERS RESPONSE:", data)
         setAnswers(data)
       })
@@ -67,11 +64,6 @@ function AnswersPage() {
 
   if (!answers || rows.length === 0 || columns.length === 0) {
     return <div>Loading...</div>
-  }
-
-  // Helper: find cell data
-  const getCell = (r: number, c: number) => {
-    return answers.find(x => x.row_idx === r && x.col_idx === c)
   }
 
   return (
@@ -107,16 +99,17 @@ function AnswersPage() {
                 {row}
               </div>
 
-              {columns.map((_, colIndex) => {
+              {columns.map((col, colIndex) => {
 
-                const cell = getCell(rowIndex, colIndex)
-                const count = cell?.player_count || 0
-                const players = cell?.players || []
+                // ✅ FIX: use key lookup instead of .find
+                const key = `${row}|${col}`
+                const players = answers[key] || []
+                const count = players.length
 
                 return (
 
                   <div
-                    key={`${rowIndex}-${colIndex}`}
+                    key={key}
                     className="cell"
                     style={{ cursor: "pointer" }}
                     onClick={() => setActivePlayers(players)}
