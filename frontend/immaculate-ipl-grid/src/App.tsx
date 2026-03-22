@@ -119,15 +119,9 @@ useEffect(() => {
 
   async function finalizeGame() {
 
-    await fetch(`${BASE_URL}/completion`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        grid_id: GRID_ID
-      })
-    });
+    await fetch(`${BASE_URL}/completion?grid_id=${GRID_ID}`, {
+  method: "POST"
+});
 
     const cells = Object.entries(lockedCells).map(([key, player]) => {
 
