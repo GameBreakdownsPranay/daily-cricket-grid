@@ -16,7 +16,8 @@ const RARITY_TURNS = 9;
 
 function GamePage() {
 
-  
+  const DEV_MODE = import.meta.env.VITE_DEV_MODE === "true"
+
   const [activeCell, setActiveCell] = useState<string | null>(null);
   const [inputValue, setInputValue] = useState("");
 
@@ -24,6 +25,7 @@ function GamePage() {
   const [cellStatus, setCellStatus] = useState<Record<string, CellStatus>>({});
 
   const [attemptsUsed, setAttemptsUsed] = useState(0);
+  const [gridId, setGridId] = useState<number | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
