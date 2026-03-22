@@ -6,7 +6,7 @@ function AnswersPage() {
   const { gridId } = useParams()
   const navigate = useNavigate()
 
-  // ✅ FIX: answers is an object, not array
+  // ✅ answers is OBJECT (matches backend)
   const [answers, setAnswers] = useState<Record<string, string[]> | null>(null)
   const [activePlayers, setActivePlayers] = useState<string[] | null>(null)
 
@@ -23,45 +23,41 @@ function AnswersPage() {
 
   useEffect(() => {
 
-    // 1. Fetch grid structure
-    fetch(gridUrl)
-      .then(async (res) => {
-        if (!res.ok) {
-          const text = await res.text()
-          console.error("GRID FETCH ERROR:", text)
-          throw new Error("Grid fetch failed")
-        }
-        return res.json()
-      })
-      .then(data => {
+    async function loadData() {
+      try {
+        // 1. Fetch grid
+        const gridRes = await fetch(gridUrl)
+        if (!gridRes.ok) throw new Error("Grid fetch failed")
 
-        const cols = data.cols.map((c: any) => c.label)
-        const rowsArr = data.rows.map((r: any) => r.label)
+        const gridData = await gridRes.json()
+
+        const cols = gridData.cols.map((c: any) => c.label)
+        const rowsArr = gridData.rows.map((r: any) => r.label)
 
         setColumns(cols)
         setRows(rowsArr)
 
         // 2. Fetch answers
-        return fetch(`${BASE_URL}/grid_answers?grid_id=${effectiveGridId}`)
-      })
-      .then(async (res) => {
-        if (!res.ok) {
-          const text = await res.text()
-          console.error("GRID ANSWERS ERROR:", text)
-          throw new Error("Answers fetch failed")
-        }
-        return res.json()
-      })
-      .then((data: Record<string, string[]>) => {
-        console.log("GRID ANSWERS RESPONSE:", data)
-        setAnswers(data)
-      })
-      .catch(err => {
+        const ansRes = await fetch(`${BASE_URL}/grid_answers?grid_id=${effectiveGridId}`)
+        if (!ansRes.ok) throw new Error("Answers fetch failed")
+
+        const ansData = await ansRes.json()
+
+        console.log("GRID ANSWERS RESPONSE:", ansData)
+
+        // ✅ NO TRANSFORMATION — store directly
+        setAnswers(ansData)
+
+      } catch (err) {
         console.error("FINAL ERROR:", err)
-      })
+      }
+    }
+
+    loadData()
 
   }, [effectiveGridId])
 
+  // ⛔ wait until everything is ready
   if (!answers || rows.length === 0 || columns.length === 0) {
     return <div>Loading...</div>
   }
@@ -86,14 +82,14 @@ function AnswersPage() {
           <div className="axis axis-empty"></div>
 
           {columns.map((col) => (
-  <div key={col} className="axis axis-col">
-    {col}
-  </div>
-))}
+            <div key={col} className="axis axis-col">
+              {col}
+            </div>
+          ))}
 
-          {rows.map((row, rowIndex) => (
+          {rows.map((row) => (
 
-            <div key={rowIndex} style={{ display: "contents" }}>
+            <div key={row} style={{ display: "contents" }}>
 
               <div className="axis axis-row">
                 {row}
@@ -101,20 +97,17 @@ function AnswersPage() {
 
               {columns.map((col) => {
 
-                // ✅ FIX: use key lookup instead of .find
                 const key = `${row}|${col}`
-                const players = answers[key] || []
+                const players = answers?.[key] || []
                 const count = players.length
 
                 return (
-
                   <div
                     key={key}
                     className="cell"
                     style={{ cursor: "pointer" }}
                     onClick={() => setActivePlayers(players)}
                   >
-
                     <span
                       style={{
                         color: "#3b82f6",
@@ -125,9 +118,7 @@ function AnswersPage() {
                     >
                       {count}
                     </span>
-
                   </div>
-
                 )
 
               })}
