@@ -10,8 +10,8 @@ function AnswersPage() {
   const [answers, setAnswers] = useState<Record<string, string[]> | null>(null)
   const [activePlayers, setActivePlayers] = useState<string[] | null>(null)
 
-  const [columns, setColumns] = useState<string[]>([])
-  const [rows, setRows] = useState<string[]>([])
+  const [columns, setColumns] = useState<any[]>([])
+  const [rows, setRows] = useState<any[]>([])
 
   const params = new URLSearchParams(window.location.search)
   const gridOverride = params.get("grid")
@@ -30,8 +30,8 @@ function AnswersPage() {
 
         const gridData = await gridRes.json()
 
-        const cols = gridData.cols.map((c: any) => c.label)
-        const rowsArr = gridData.rows.map((r: any) => r.label)
+        const cols = gridData.cols
+        const rowsArr = gridData.rows
 
         setColumns(cols)
         setRows(rowsArr)
@@ -42,7 +42,21 @@ function AnswersPage() {
 
         const ansData = await ansRes.json()
 
+        const counts: Record<string, number> = {}
+
+for (const key in ansData) {
+  counts[key] = ansData[key].length
+}
+
         console.log("GRID ANSWERS RESPONSE:", ansData)
+
+        
+
+for (const key in ansData) {
+  counts[key] = ansData[key].length
+}
+
+console.log("COUNTS:", counts)
 
         // ✅ NO TRANSFORMATION — store directly
         setAnswers(ansData)
@@ -81,50 +95,50 @@ function AnswersPage() {
           <div className="axis axis-empty"></div>
 
           {columns.map((col) => (
-            <div key={col} className="axis axis-col">
-              {col}
-            </div>
-          ))}
+  <div key={col.key} className="axis axis-col">
+    {col.label}
+  </div>
+))}
 
           {rows.map((row) => (
+  <div key={row.key} style={{ display: "contents" }}>
 
-            <div key={row} style={{ display: "contents" }}>
+    <div className="axis axis-row">
+      {row.label}
+    </div>
 
-              <div className="axis axis-row">
-                {row}
-              </div>
+    {columns.map((col) => {
 
-              {columns.map((col) => {
+      const lookupKey = `${row.key}|${col.key}`
+      const players = answers[lookupKey] || []
+      const count = players.length
 
-                const key = `${row}|${col}`
-                const players = answers?.[key] || []
-                const count = players.length
+      console.log("LOOKUP:", lookupKey, count)
 
-                return (
-                  <div
-                    key={key}
-                    className="cell"
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setActivePlayers(players)}
-                  >
-                    <span
-                      style={{
-                        color: "#3b82f6",
-                        textDecoration: "underline",
-                        fontWeight: "500",
-                        fontSize: "1.25em"
-                      }}
-                    >
-                      {count}
-                    </span>
-                  </div>
-                )
+      return (
+        <div
+          key={lookupKey}
+          className="cell"
+          style={{ cursor: "pointer" }}
+          onClick={() => setActivePlayers(players)}
+        >
+          <span
+            style={{
+              color: "#3b82f6",
+              textDecoration: "underline",
+              fontWeight: "500",
+              fontSize: "1.25em"
+            }}
+          >
+            {count}
+          </span>
+        </div>
+      )
 
-              })}
+    })}
 
-            </div>
-
-          ))}
+  </div>
+))}
 
         </div>
 
