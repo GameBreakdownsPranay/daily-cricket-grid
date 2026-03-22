@@ -388,11 +388,9 @@ if (data.status !== "valid") {
   className="give-up"
   onClick={async () => {
 
-    await fetch(`${BASE_URL}/giveup`, {
-  method: "POST",
-  headers: { "Content-Type": "application/json" },
-  body: JSON.stringify({ grid_id: GRID_ID })
-});
+    await fetch(`${BASE_URL}/giveup?grid_id=${GRID_ID}`, {
+  method: "POST"
+})
     const cells = Object.entries(lockedCells).map(([key, player]) => {
       const [rowIndex, colIndex] = key.split("-").map(Number);
 
