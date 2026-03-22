@@ -351,32 +351,27 @@ app.post("/rarity_score", async (req, res) => {
 
 })
 
-/* ---------------- GRID ANSWERS ---------------- */
-
 app.get("/grid_answers", async (req, res) => {
 
-  const grid_id = parseInt(req.query.grid_id)
+  const grid_id = Number(req.query.grid_id)
+
+  if (!grid_id) {
+    return res.status(400).json({ error: "Missing grid_id" })
+  }
 
   const grid = schedule.find(g => g.day === grid_id)
 
-if (!grid) {
-  return res.status(404).json({ error: "Grid not found" })
-}
+  if (!grid) {
+    return res.status(404).json({ error: "Grid not found" })
+  }
 
-/* normalize display labels to metric keys */
-const normalize = (v) =>
-  displayToMetricMap[v] || v
+  const normalize = (v) => displayToMetricMap[v] || v
 
-const rows = grid.rows.map(normalize)
-const cols = grid.cols.map(normalize)
+  const rows = grid.rows.map(normalize)
+  const cols = grid.cols.map(normalize)
 
   const rowTypes = rows.map(detectAxisType)
   const colTypes = cols.map(detectAxisType)
-
-  console.log("ROWS:", rows)
-  console.log("COLS:", cols)
-  console.log("ROW TYPES:", rowTypes)
-  console.log("COL TYPES:", colTypes)
 
   const { data, error } = await supabase.rpc("get_grid_answers", {
     p_rows: rows,
@@ -386,12 +381,11 @@ const cols = grid.cols.map(normalize)
   })
 
   if (error) {
-    console.error("GRID ANSWERS RPC ERROR:", error)
+    console.error("GRID ANSWERS ERROR:", error)
     return res.status(500).json({ error: error.message })
   }
 
   res.json(data)
-
 })
 
 /* ---------------- START SERVER ---------------- */
