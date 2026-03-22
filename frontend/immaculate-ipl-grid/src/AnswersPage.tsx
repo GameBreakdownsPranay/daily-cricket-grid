@@ -16,7 +16,6 @@ function AnswersPage() {
   const params = new URLSearchParams(window.location.search)
   const gridOverride = params.get("grid")
 
-  const gridUrl = gridOverride ? `/grid?grid=${gridOverride}` : "/grid"
   const effectiveGridId = gridOverride ? Number(gridOverride) : Number(gridId)
 
   const BASE_URL = import.meta.env.VITE_API_URL
@@ -26,7 +25,7 @@ function AnswersPage() {
     async function loadData() {
       try {
         // 1. Fetch grid
-        const gridRes = await fetch(gridUrl)
+        const gridRes = await fetch(`${BASE_URL}/grid?grid=${effectiveGridId}`)
         if (!gridRes.ok) throw new Error("Grid fetch failed")
 
         const gridData = await gridRes.json()
