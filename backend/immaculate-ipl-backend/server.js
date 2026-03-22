@@ -16,7 +16,8 @@ if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
   process.exit(1);
 }
 
-const DEV_MODE = true
+const DEV_MODE = process.env.DEV_MODE === "true"
+console.log("DEV_MODE:", DEV_MODE)
 
 const app = express()
 
