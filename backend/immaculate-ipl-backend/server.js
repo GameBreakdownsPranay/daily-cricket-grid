@@ -243,117 +243,60 @@ cols: grid.cols.map(v => ({
 
 /* ---------------- VALIDATION ---------------- */
 
-app.post("/validate", validateLimiter, async (req, res) => {
+app.post("/validate", async (req, res) => {
+  const start = Date.now()
 
-  console.log("VALIDATE BODY:", req.body)
+  const { grid_id, row_idx, col_idx, player_name } = req.body
 
-  const { player, grid_id, row_value, col_value } = req.body
+  // Normalize input
+  const input = player_name.trim().toLowerCase()
 
-  console.log("CACHE CALL FOR GRID:", grid_id)
-
-  await loadGridToCache(grid_id)
-
-  const todayGrid = getTodayGrid()
-
-if (!DEV_MODE && grid_id !== todayGrid.day) {
-  return res.status(403).json({
-    status: "invalid",
-    message: "Grid not active"
-  })
-}
-
-  const grid = schedule.find(g => g.day === grid_id)
+  // Get cached grid
+  const grid = gridCache.get(grid_id)
 
   if (!grid) {
-    return res.status(404).json({ status: "invalid" })
+    return res.status(400).json({ error: "Grid not loaded in cache" })
   }
 
-  const row_idx = grid.rows.indexOf(row_value)
-  const col_idx = grid.cols.indexOf(col_value)
+  // Build cell key
+  const cellKey = `${row_idx}_${col_idx}`
 
-  if (row_idx === -1 || col_idx === -1) {
-  return res.json({ status: "invalid" })
-}
+  // Get answers for this cell
+  const answers = grid[cellKey] || []
 
-  const input = player
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, " ")
+  // Match player (partial match supported)
+  const matches = answers.filter(p =>
+    p.normalized.includes(input)
+  )
 
-  const { data, error } = await supabase
-    .from("grid_cell_answers")
-    .select("player_name")
-    .eq("grid_id", grid_id)
-    .eq("row_idx", row_idx)
-    .eq("col_idx", col_idx)
-
-console.log("ROW IDX:", row_idx)
-console.log("COL IDX:", col_idx)
-console.log("DB RESULTS:", data)
-
-  /* ADD DEBUG HERE */
-console.log("INPUT:", input)
-console.log("VALID ANSWERS:", (data || []).map(d => d.player_name))
-
-  if (error) {
-    return res.status(500).json({ error: error.message })
-  }
-
-  if (!data || data.length === 0) {
-    return res.json({ status: "invalid" })
-  }
-
-  const matches = data.filter(p => {
-
-  const name = p.player_name
-    .trim()
-    .toLowerCase()
-    .replace(/\s+/g, " ")
-
-  return name.includes(input)
-
-})
-
+  // No match
   if (matches.length === 0) {
-    return res.json({ status: "invalid" })
-  }
-
-  if (matches.length > 1) {
     return res.json({
-      status: "ambiguous",
-      message: "Multiple players match that name. Please type more."
+      correct: false,
+      message: "Incorrect. No match found."
     })
   }
 
-  const canonical = matches[0].player_name
+  // Optional: handle ambiguity (multiple matches)
+  if (matches.length > 1) {
+    return res.json({
+      correct: false,
+      message: "Multiple matches found. Please be more specific."
+    })
+  }
 
-console.log("RARITY WRITE:", {
-  grid_id,
-  row_idx,
-  col_idx,
-  player: canonical
+  // Single match → success
+  const matchedPlayer = matches[0]
+
+  const duration = Date.now() - start
+  console.log(`VALIDATION TIME: ${duration}ms`)
+
+  return res.json({
+    correct: true,
+    player: matchedPlayer.player_name
+  })
 })
 
-// ✅ convert index → actual values
-const row_value_actual = grid.rows[row_idx]
-const col_value_actual = grid.cols[col_idx]
-
-// ADD this instead ✅
-supabase.rpc("increment_cell_player_rarity", {
-  p_grid_id: grid_id,
-  p_row_value: row_value_actual,
-  p_col_value: col_value_actual,
-  p_player_name: canonical
-}).then(({ error }) => {
-  if (error) console.error("RARITY RPC ERROR:", error)
-})
-
-res.json({
-  status: "valid",
-  canonical_player_name: canonical
-})
-
-})
 /* ---------------- COMPLETION ---------------- */
 
 app.post("/completion", async (req, res) => {
