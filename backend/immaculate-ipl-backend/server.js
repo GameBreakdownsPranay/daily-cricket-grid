@@ -294,16 +294,16 @@ console.log("RARITY WRITE:", {
   player: canonical
 })
 
+// ✅ convert index → actual values
+const row_value_actual = grid.rows[row_idx]
+const col_value_actual = grid.cols[col_idx]
+
 const { error: rarityError } = await supabase.rpc("increment_cell_player_rarity", {
   p_grid_id: grid_id,
-  p_row_idx: row_idx,
-  p_col_idx: col_idx,
+  p_row_value: row_value_actual,
+  p_col_value: col_value_actual,
   p_player_name: canonical
 })
-
-if (rarityError) {
-  console.error("RARITY RPC ERROR:", rarityError)
-}
 
 if (rarityError) {
   console.error("RARITY RPC ERROR:", rarityError)
