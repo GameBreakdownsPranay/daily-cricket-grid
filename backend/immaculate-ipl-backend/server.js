@@ -19,6 +19,8 @@ if (!process.env.SUPABASE_URL || !process.env.SUPABASE_SERVICE_ROLE_KEY) {
 const DEV_MODE = process.env.DEV_MODE === "true"
 console.log("DEV_MODE:", DEV_MODE)
 
+const gridCache = new Map()
+
 const app = express()
 
 app.set("trust proxy", 1)
@@ -47,6 +49,40 @@ const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_SERVICE_ROLE_KEY
 )
+
+async function loadGridToCache(grid_id) {
+  if (gridCache.has(grid_id)) return
+
+  const { data, error } = await supabase
+    .from("grid_cell_answers")
+    .select("grid_id, row_idx, col_idx, player_name")
+    .eq("grid_id", grid_id)
+
+  if (error) {
+    console.error("CACHE LOAD ERROR:", error)
+    return
+  }
+
+  const map = {}
+
+  for (const row of data) {
+    const key = `${row.row_idx}_${row.col_idx}`
+
+    if (!map[key]) map[key] = []
+
+    map[key].push({
+      original: row.player_name,
+      normalized: row.player_name
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+    })
+  }
+
+  gridCache.set(grid_id, map)
+
+  console.log(`✅ Grid ${grid_id} cached`)
+}
 
 /* ---------------- LOAD DAILY GRID SCHEDULE ---------------- */
 
@@ -213,6 +249,10 @@ app.post("/validate", validateLimiter, async (req, res) => {
 
   const { player, grid_id, row_value, col_value } = req.body
 
+  console.log("CACHE CALL FOR GRID:", grid_id)
+
+  await loadGridToCache(grid_id)
+
   const todayGrid = getTodayGrid()
 
 if (!DEV_MODE && grid_id !== todayGrid.day) {
@@ -298,24 +338,22 @@ console.log("RARITY WRITE:", {
 const row_value_actual = grid.rows[row_idx]
 const col_value_actual = grid.cols[col_idx]
 
-const { error: rarityError } = await supabase.rpc("increment_cell_player_rarity", {
+// ADD this instead ✅
+supabase.rpc("increment_cell_player_rarity", {
   p_grid_id: grid_id,
   p_row_value: row_value_actual,
   p_col_value: col_value_actual,
   p_player_name: canonical
+}).then(({ error }) => {
+  if (error) console.error("RARITY RPC ERROR:", error)
 })
 
-if (rarityError) {
-  console.error("RARITY RPC ERROR:", rarityError)
-}
-
-  res.json({
-    status: "valid",
-    canonical_player_name: canonical
-  })
-
+res.json({
+  status: "valid",
+  canonical_player_name: canonical
 })
 
+})
 /* ---------------- COMPLETION ---------------- */
 
 app.post("/completion", async (req, res) => {
