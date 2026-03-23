@@ -166,9 +166,6 @@ app.get("/grid", (req, res) => {
 
   const overrideGrid = req.query.grid
 
-  console.log("GRID RAW ROWS:", grid.rows)
-  console.log("GRID RAW COLS:", grid.cols)
-
   let grid
 
   if (overrideGrid) {
@@ -186,6 +183,10 @@ app.get("/grid", (req, res) => {
     grid = getTodayGrid()
 
   }
+
+  // ✅ ADD HERE
+console.log("GRID RAW ROWS:", grid.rows)
+console.log("GRID RAW COLS:", grid.cols)
 
   const formatAxis = (v) => metricDisplayMap[v] || v
 
