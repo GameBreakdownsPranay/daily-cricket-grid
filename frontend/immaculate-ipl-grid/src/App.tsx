@@ -37,6 +37,7 @@ function GamePage() {
   const navigate = useNavigate();
 
   const BASE_URL = import.meta.env.VITE_API_URL;
+  console.log("BASE_URL:", BASE_URL);
 
   const [grid, setGrid] = useState<{
   grid_id:number,
@@ -334,6 +335,10 @@ if (data.status !== "valid") {
   return (
 
     <div className="app">
+
+      <div style={{ padding: "10px", fontSize: "12px" }}>
+  API: {BASE_URL || "undefined"}
+</div>
 
        <header className="header">
         <h1>🏏 Immaculate IPL Grid</h1>
