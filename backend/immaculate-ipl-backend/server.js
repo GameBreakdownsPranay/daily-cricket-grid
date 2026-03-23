@@ -166,6 +166,9 @@ app.get("/grid", (req, res) => {
 
   const overrideGrid = req.query.grid
 
+  console.log("GRID RAW ROWS:", grid.rows)
+  console.log("GRID RAW COLS:", grid.cols)
+
   let grid
 
   if (overrideGrid) {
@@ -283,12 +286,27 @@ console.log("VALID ANSWERS:", (data || []).map(d => d.player_name))
 
   const canonical = matches[0].player_name
 
-  supabase.rpc("increment_cell_player_rarity", {
-    p_grid_id: grid_id,
-    p_row_idx: row_idx,
-    p_col_idx: col_idx,
-    p_player_name: canonical
-  })
+console.log("RARITY WRITE:", {
+  grid_id,
+  row_idx,
+  col_idx,
+  player: canonical
+})
+
+const { error: rarityError } = await supabase.rpc("increment_cell_player_rarity", {
+  p_grid_id: grid_id,
+  p_row_idx: row_idx,
+  p_col_idx: col_idx,
+  p_player_name: canonical
+})
+
+if (rarityError) {
+  console.error("RARITY RPC ERROR:", rarityError)
+}
+
+if (rarityError) {
+  console.error("RARITY RPC ERROR:", rarityError)
+}
 
   res.json({
     status: "valid",
