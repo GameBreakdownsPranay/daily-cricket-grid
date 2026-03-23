@@ -60,7 +60,7 @@ useEffect(() => {
       let data;
 
 if (DEV_MODE && gridId !== null) {
-  const res = await fetch(`${BASE_URL}/grid?grid=${gridId}`);
+  const res = await fetch(`${BASE_URL}/grid?grid_id=${gridId}`);
   data = await res.json();
 } else {
   data = await fetchGrid();
