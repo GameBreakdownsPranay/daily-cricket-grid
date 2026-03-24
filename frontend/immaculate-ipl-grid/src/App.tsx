@@ -72,6 +72,14 @@ useEffect(() => {
 
       setGrid(data);
       if (gridId === null) setGridId(data.grid_id);
+      if (DEV_MODE) {
+  setLockedCells({});
+  setCellStatus({});
+  setAttemptsUsed(0);
+  setGridComplete(false);
+  setGaveUp(false);
+  setRarityScore(null);
+}
       const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
 if (saved) {
   const s = JSON.parse(saved);

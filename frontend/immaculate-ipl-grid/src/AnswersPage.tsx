@@ -21,6 +21,7 @@ function AnswersPage() {
   const effectiveGridId = gridOverride ? Number(gridOverride) : Number(gridId)
 
   const BASE_URL = import.meta.env.VITE_API_URL
+  const DEV_MODE = import.meta.env.VITE_DEV_MODE === "true"
 
   useEffect(() => {
 
@@ -31,7 +32,7 @@ const todayData = await todayRes.json()
 const todayId = todayData.grid_id
 setTodayGridId(todayId)
 
-if (effectiveGridId !== todayId) {
+if (!DEV_MODE && effectiveGridId !== todayId) {
   setAccessAllowed(false)
   return
 }
