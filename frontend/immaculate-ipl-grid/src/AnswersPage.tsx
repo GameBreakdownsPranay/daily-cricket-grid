@@ -157,8 +157,6 @@ if (!answers || rows.length === 0 || columns.length === 0) {
       const players = answers[lookupKey] || []
       const count = players.length
 
-      console.log("LOOKUP:", lookupKey, count)
-
       return (
         <div
           key={lookupKey}

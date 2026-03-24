@@ -39,7 +39,6 @@ function GamePage() {
   const navigate = useNavigate();
 
   const BASE_URL = import.meta.env.VITE_API_URL;
-  console.log("BASE_URL:", BASE_URL);
 
   const [grid, setGrid] = useState<{
   grid_id:number,
@@ -67,8 +66,6 @@ useEffect(() => {
 
       const res = await fetch(url);
       const data = await res.json();
-
-      console.log("GRID DATA:", data);
 
       setGrid(data);
       if (gridId === null) setGridId(data.grid_id);
