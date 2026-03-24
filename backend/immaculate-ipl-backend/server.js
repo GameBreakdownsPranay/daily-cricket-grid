@@ -248,8 +248,8 @@ app.post("/validate", async (req, res) => {
 
   const { grid_id, row_idx, col_idx, player_name } = req.body
 
-  // Normalize input
-  const input = player_name.trim().toLowerCase()
+  const rawPlayer = req.body.player || req.body.player_name || "";
+const input = rawPlayer.trim().toLowerCase();
 
   // Get cached grid
   const grid = gridCache.get(grid_id)
