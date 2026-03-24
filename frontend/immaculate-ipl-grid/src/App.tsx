@@ -332,7 +332,8 @@ if (data.status !== "valid") {
     <div className="app">
 
        <header className="header">
-        <h1>🏏 Immaculate IPL Grid</h1>
+        <h1>Daily Cricket Grid - IPL Edition</h1>
+        <p style={{ fontStyle: "italic", margin: "4px 0 0 0", fontSize: "13px", opacity: 0.75 }}>Coverage from 2008 to 2025</p>
 
         <div
           className="how-to-play-link"
