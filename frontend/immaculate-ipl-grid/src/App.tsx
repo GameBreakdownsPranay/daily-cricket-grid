@@ -320,7 +320,7 @@ if (data.status !== "valid") {
 
   const shareGrid = async () => {
 
-    let output = `Immaculate IPL Grid #${GRID_ID + 1}\n`;
+    let output = `Daily Cricket Grid - IPL Edition #${GRID_ID + 1}\n`;
     output += `Score: ${rarityScore ?? "-"}\n\n`;
 
     for (let r = 0; r < 3; r++) {
@@ -337,7 +337,7 @@ if (data.status !== "valid") {
       output += rowStr + "\n";
 
     }
-
+    output += `\nPlay today's grid: ${window.location.origin}`;
     await navigator.clipboard.writeText(output);
 
     alert("Result copied to clipboard!");
