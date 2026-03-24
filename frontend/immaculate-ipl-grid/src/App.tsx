@@ -34,6 +34,7 @@ function GamePage() {
   const [showHowToPlay, setShowHowToPlay] = useState(false)
   const [showCompletionModal, setShowCompletionModal] = useState(false)
   const [gaveUp, setGaveUp] = useState(false)
+  const [isGivingUp, setIsGivingUp] = useState(false);
 
   const navigate = useNavigate();
 
@@ -414,8 +415,9 @@ if (data.status !== "valid") {
 
             <button
   className="give-up"
+  disabled={isGivingUp}
   onClick={async () => {
-
+    setIsGivingUp(true);
     await fetch(`${BASE_URL}/giveup?grid_id=${GRID_ID}`, {
   method: "POST"
 })
@@ -449,7 +451,7 @@ if (data.status !== "valid") {
 
   }}
 >
-  Give Up
+  {isGivingUp ? "Loading..." : "Give Up"}
 </button>
           </div>
 
