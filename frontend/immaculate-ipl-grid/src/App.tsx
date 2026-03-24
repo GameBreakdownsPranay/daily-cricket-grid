@@ -209,6 +209,8 @@ useEffect(() => {
 
       const data = await response.json();
 
+      console.log("VALIDATE RESPONSE:", data);  
+
       if (data.status === "ambiguous") {
 
   setCellStatus(prev => ({
@@ -327,10 +329,6 @@ if (data.status !== "valid") {
   return (
 
     <div className="app">
-
-      <div style={{ padding: "10px", fontSize: "12px" }}>
-  API: {BASE_URL || "undefined"}
-</div>
 
        <header className="header">
         <h1>🏏 Immaculate IPL Grid</h1>
