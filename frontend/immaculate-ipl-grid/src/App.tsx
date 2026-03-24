@@ -32,6 +32,7 @@ function GamePage() {
   const [gridComplete, setGridComplete] = useState(false);
   const [rarityScore, setRarityScore] = useState<number | null>(null);
   const [showHowToPlay, setShowHowToPlay] = useState(false)
+  const [gaveUp, setGaveUp] = useState(false)
 
   const navigate = useNavigate();
 
@@ -69,6 +70,16 @@ useEffect(() => {
 
       setGrid(data);
       if (gridId === null) setGridId(data.grid_id);
+      const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
+if (saved) {
+  const s = JSON.parse(saved);
+  setLockedCells(s.lockedCells ?? {});
+  setCellStatus(s.cellStatus ?? {});
+  setAttemptsUsed(s.attemptsUsed ?? 0);
+  setGridComplete(s.gridComplete ?? false);
+  setGaveUp(s.gaveUp ?? false);
+  setRarityScore(s.rarityScore ?? null);
+}
 
     } catch (err) {
 
@@ -111,6 +122,18 @@ useEffect(() => {
 
 }, []);
 
+useEffect(() => {
+  if (!GRID_ID) return;
+  const snapshot = {
+    lockedCells,
+    cellStatus,
+    attemptsUsed,
+    gridComplete,
+    gaveUp,
+    rarityScore
+  };
+  localStorage.setItem(`cricket_grid_${GRID_ID}`, JSON.stringify(snapshot));
+}, [lockedCells, cellStatus, attemptsUsed, gridComplete, gaveUp, rarityScore, GRID_ID]);
 
 useEffect(() => {
 
@@ -419,6 +442,7 @@ if (data.status !== "valid") {
     setRarityScore(data.average_rarity);
 
     setGridComplete(true);
+    setGaveUp(true);
     setActiveCell(null);
 
   }}

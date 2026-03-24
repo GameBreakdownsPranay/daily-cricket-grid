@@ -12,6 +12,8 @@ function AnswersPage() {
 
   const [columns, setColumns] = useState<any[]>([])
   const [rows, setRows] = useState<any[]>([])
+  const [todayGridId, setTodayGridId] = useState<number | null>(null)
+  const [accessAllowed, setAccessAllowed] = useState<boolean | null>(null)
 
   const params = new URLSearchParams(window.location.search)
   const gridOverride = params.get("grid")
@@ -24,6 +26,29 @@ function AnswersPage() {
 
     async function loadData() {
       try {
+        const todayRes = await fetch(`${BASE_URL}/grid`)
+const todayData = await todayRes.json()
+const todayId = todayData.grid_id
+setTodayGridId(todayId)
+
+if (effectiveGridId !== todayId) {
+  setAccessAllowed(false)
+  return
+}
+
+const saved = localStorage.getItem(`cricket_grid_${effectiveGridId}`)
+if (saved) {
+  const s = JSON.parse(saved)
+  if (s.gridComplete || s.gaveUp) {
+    setAccessAllowed(true)
+  } else {
+    setAccessAllowed(false)
+    return
+  }
+} else {
+  setAccessAllowed(false)
+  return
+}
         // 1. Fetch grid
         const gridRes = await fetch(`${BASE_URL}/grid?grid_id=${effectiveGridId}`)
         if (!gridRes.ok) throw new Error("Grid fetch failed")
@@ -71,7 +96,22 @@ console.log("COUNTS:", counts)
   }, [effectiveGridId])
 
   // ⛔ wait until everything is ready
-  if (!answers || rows.length === 0 || columns.length === 0) {
+  
+  if (accessAllowed === false) {
+  return (
+    <div style={{ padding: "40px", color: "white", textAlign: "center" }}>
+      <h2>🔒 Access Denied</h2>
+      <p>
+        {todayGridId !== null && effectiveGridId !== todayGridId
+          ? "Answers are only available for today's grid."
+          : "Complete or give up today's grid to see answers."}
+      </p>
+      <button onClick={() => navigate("/")}>← Back to Grid</button>
+    </div>
+  )
+}
+
+if (!answers || rows.length === 0 || columns.length === 0) {
     return <div>Loading...</div>
   }
 
