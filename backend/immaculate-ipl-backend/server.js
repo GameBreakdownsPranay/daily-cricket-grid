@@ -362,7 +362,7 @@ app.get("/grid_answers", async (req, res) => {
 
   const grid_id = Number(req.query.grid_id)
 
-  if (!grid_id) {
+  if (grid_id === null || grid_id === undefined || isNaN(grid_id)) {
     return res.status(400).json({ error: "Missing grid_id" })
   }
 
