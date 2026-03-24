@@ -68,6 +68,7 @@ useEffect(() => {
       console.log("GRID DATA:", data);
 
       setGrid(data);
+      if (gridId === null) setGridId(data.grid_id);
 
     } catch (err) {
 

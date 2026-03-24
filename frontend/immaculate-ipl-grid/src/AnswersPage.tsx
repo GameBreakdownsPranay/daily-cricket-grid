@@ -25,7 +25,7 @@ function AnswersPage() {
     async function loadData() {
       try {
         // 1. Fetch grid
-        const gridRes = await fetch(`${BASE_URL}/grid?grid=${effectiveGridId}`)
+        const gridRes = await fetch(`${BASE_URL}/grid?grid_id=${effectiveGridId}`)
         if (!gridRes.ok) throw new Error("Grid fetch failed")
 
         const gridData = await gridRes.json()
