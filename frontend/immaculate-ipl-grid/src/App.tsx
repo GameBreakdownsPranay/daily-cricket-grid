@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom"
 import AnswersPage from "./AnswersPage"
-import { fetchGrid } from "./api/grid"
 
 
 type CellStatus =
@@ -57,12 +56,18 @@ useEffect(() => {
 
     try {
 
-      const data = await fetchGrid();
+      let url = `${BASE_URL}/grid`;
+
+      if (DEV_MODE && gridId !== null) {
+        url = `${BASE_URL}/grid?grid_id=${gridId}`;
+      }
+
+      const res = await fetch(url);
+      const data = await res.json();
 
       console.log("GRID DATA:", data);
 
       setGrid(data);
-      setGridId(data.grid_id); // ✅ CRITICAL FIX
 
     } catch (err) {
 
@@ -74,7 +79,7 @@ useEffect(() => {
 
   loadGrid();
 
-}, []);  
+}, [gridId]);
 
 useEffect(() => {
 
@@ -348,16 +353,29 @@ if (data.status !== "valid") {
           <p className="grid-number">Grid #{GRID_ID + 1}</p>
 
           {DEV_MODE && (
-  <div style={{ marginTop: "8px", display: "flex", gap: "10px", justifyContent: "center" }}>
-
-    <button onClick={() => setGridId((g) => (g !== null ? g - 1 : 0))}>
+  <div
+    style={{
+      marginTop: "8px",
+      display: "flex",
+      gap: "10px",
+      justifyContent: "center"
+    }}
+  >
+    <button
+      onClick={() =>
+        setGridId((g: number | null) => (g !== null ? g - 1 : 0))
+      }
+    >
       ← Prev
     </button>
 
-    <button onClick={() => setGridId((g) => (g !== null ? g + 1 : 1))}>
+    <button
+      onClick={() =>
+        setGridId((g: number | null) => (g !== null ? g + 1 : 1))
+      }
+    >
       Next →
     </button>
-
   </div>
 )}
 
