@@ -402,6 +402,7 @@ async function startServer() {
   await loadMetricKeys();
   await loadAxisRegistry();
   loadSchedule();
+  await loadGridToCache(getTodayGrid().day)
 
   const PORT = process.env.PORT;
 
