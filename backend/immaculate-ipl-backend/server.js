@@ -220,11 +220,7 @@ app.get("/grid", (req, res) => {
 
   }
 
-  // ✅ ADD HERE
-console.log("GRID RAW ROWS:", grid.rows)
-console.log("GRID RAW COLS:", grid.cols)
-
-  const formatAxis = (v) => metricDisplayMap[v] || v
+const formatAxis = (v) => metricDisplayMap[v] || v
 
   res.json({
     grid_id: grid.day,
