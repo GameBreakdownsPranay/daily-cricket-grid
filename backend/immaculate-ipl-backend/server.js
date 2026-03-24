@@ -250,17 +250,19 @@ app.post("/validate", async (req, res) => {
 const rawPlayer = req.body.player || req.body.player_name || "";
 const input = rawPlayer.trim().toLowerCase();
 
-// find indices from grid
-const row_idx = grid.rows.findIndex(r => r.key === row_value);
-const col_idx = grid.cols.findIndex(c => c.key === col_value);
 
 
   // Get cached grid
+  await loadGridToCache(grid_id)
   const grid = gridCache.get(grid_id)
 
   if (!grid) {
     return res.status(400).json({ error: "Grid not loaded in cache" })
   }
+  
+  const scheduleEntry = schedule.find(g => g.day === grid_id)
+const row_idx = scheduleEntry.rows.indexOf(row_value)
+const col_idx = scheduleEntry.cols.indexOf(col_value)
 
   // Build cell key
   const cellKey = `${row_idx}_${col_idx}`
@@ -276,7 +278,7 @@ const col_idx = grid.cols.findIndex(c => c.key === col_value);
   // No match
   if (matches.length === 0) {
     return res.json({
-      correct: false,
+      status: "incorrect",
       message: "Incorrect. No match found."
     })
   }
@@ -284,7 +286,7 @@ const col_idx = grid.cols.findIndex(c => c.key === col_value);
   // Optional: handle ambiguity (multiple matches)
   if (matches.length > 1) {
     return res.json({
-      correct: false,
+      status: "ambiguous",
       message: "Multiple matches found. Please be more specific."
     })
   }
@@ -295,9 +297,9 @@ const col_idx = grid.cols.findIndex(c => c.key === col_value);
   const duration = Date.now() - start
   console.log(`VALIDATION TIME: ${duration}ms`)
 
-  return res.json({
-    correct: true,
-    player: matchedPlayer.player_name
+ return res.json({
+    status: "valid",
+    canonical_player_name: matchedPlayer.original
   })
 })
 
