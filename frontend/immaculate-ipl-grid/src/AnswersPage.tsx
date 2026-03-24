@@ -37,19 +37,22 @@ if (!DEV_MODE && effectiveGridId !== todayId) {
   return
 }
 
-const saved = localStorage.getItem(`cricket_grid_${effectiveGridId}`)
-if (saved) {
-  const s = JSON.parse(saved)
-  if (s.gridComplete || s.gaveUp) {
-    setAccessAllowed(true)
+if (!DEV_MODE) {
+  const saved = localStorage.getItem(`cricket_grid_${effectiveGridId}`)
+  if (saved) {
+    const s = JSON.parse(saved)
+    if (s.gridComplete || s.gaveUp) {
+      setAccessAllowed(true)
+    } else {
+      setAccessAllowed(false)
+      return
+    }
   } else {
     setAccessAllowed(false)
     return
   }
-} else {
-  setAccessAllowed(false)
-  return
 }
+setAccessAllowed(true)
         // 1. Fetch grid
         const gridRes = await fetch(`${BASE_URL}/grid?grid_id=${effectiveGridId}`)
         if (!gridRes.ok) throw new Error("Grid fetch failed")
