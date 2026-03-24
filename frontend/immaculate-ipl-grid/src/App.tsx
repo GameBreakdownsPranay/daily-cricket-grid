@@ -57,37 +57,24 @@ useEffect(() => {
 
     try {
 
-      let data;
+      const data = await fetchGrid();
 
-if (DEV_MODE && gridId !== null) {
-  const res = await fetch(`${BASE_URL}/grid?grid_id=${gridId}`);
-  data = await res.json();
-} else {
-  data = await fetchGrid();
-}
+      console.log("GRID DATA:", data);
 
-      console.log("GRID DATA:", data)
-
-      setGrid(data)
+      setGrid(data);
+      setGridId(data.grid_id); // ✅ CRITICAL FIX
 
     } catch (err) {
 
-      console.error("Grid load failed", err)
+      console.error("Grid load failed", err);
 
     }
 
   }
 
-  loadGrid()
+  loadGrid();
 
-}, [gridId])
-
-useEffect(() => {
-  if (DEV_MODE) {
-    setGridId(81)
-  }
-}, [])
-  
+}, []);  
 
 useEffect(() => {
 
