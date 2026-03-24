@@ -200,7 +200,7 @@ app.get("/", (req, res) => {
 
 app.get("/grid", (req, res) => {
 
-  const overrideGrid = req.query.grid
+  const overrideGrid = req.query.grid_id
 
   let grid
 
