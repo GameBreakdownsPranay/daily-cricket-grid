@@ -246,10 +246,14 @@ cols: grid.cols.map(v => ({
 app.post("/validate", async (req, res) => {
   const start = Date.now()
 
-  const { grid_id, row_idx, col_idx, player_name } = req.body
-
-  const rawPlayer = req.body.player || req.body.player_name || "";
+  const { grid_id, row_value, col_value } = req.body;
+const rawPlayer = req.body.player || req.body.player_name || "";
 const input = rawPlayer.trim().toLowerCase();
+
+// find indices from grid
+const row_idx = grid.rows.findIndex(r => r.key === row_value);
+const col_idx = grid.cols.findIndex(c => c.key === col_value);
+
 
   // Get cached grid
   const grid = gridCache.get(grid_id)
