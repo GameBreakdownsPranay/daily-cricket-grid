@@ -32,6 +32,7 @@ function GamePage() {
   const [gridComplete, setGridComplete] = useState(false);
   const [rarityScore, setRarityScore] = useState<number | null>(null);
   const [showHowToPlay, setShowHowToPlay] = useState(false)
+  const [showCompletionModal, setShowCompletionModal] = useState(false)
   const [gaveUp, setGaveUp] = useState(false)
 
   const navigate = useNavigate();
@@ -173,6 +174,7 @@ useEffect(() => {
     const data = await res.json();
 
     setRarityScore(data.average_rarity);
+    setShowCompletionModal(true);
 
   }
 
@@ -539,37 +541,40 @@ if (data.status !== "valid") {
 
         </div>
 
-        {gridComplete && (
-          <div className="completion-banner">
-            🎉 Grid Complete!
-          </div>
-        )}
+{showCompletionModal && (
+  <div className="modal-overlay" style={{ alignItems: "flex-start", paddingTop: "35vh", justifyContent: "center", width: "100%" }}>
+    <div className="modal" style={{ textAlign: "center", width: "95%", maxWidth: "600px", marginLeft: "auto", marginRight: "auto" }}>
 
-        {rarityScore !== null && (
-          <div className="rarity-score">
-            ⭐ Rarity Score: {rarityScore}
-          </div>
-        )}
+      <button
+        className="close-btn"
+        onClick={() => setShowCompletionModal(false)}
+      >
+        ×
+      </button>
 
-        {gridComplete && (
-          <button className="share-button" onClick={shareGrid}>
-            Share Result
-          </button>
-        )}
-        
-        {gridComplete && (
-  <div
-    style={{
-      marginTop: "10px",
-      textDecoration: "underline",
-      cursor: "pointer"
-    }}
-    onClick={() => navigate(`/answers/${GRID_ID}?grid=${GRID_ID}`)}
-  >
-    See All Answers
+      <h2>🎉 Grid Complete!</h2>
+
+      <p style={{ fontSize: "18px" }}>
+        ⭐ Rarity Score: <strong>{rarityScore}</strong>
+      </p>
+
+      <button className="share-button" onClick={shareGrid}>
+        Share Result
+      </button>
+
+      <div
+        style={{ marginTop: "14px", textDecoration: "underline", cursor: "pointer" }}
+        onClick={() => {
+          setShowCompletionModal(false)
+          navigate(`/answers/${GRID_ID}?grid=${GRID_ID}`)
+        }}
+      >
+        See All Answers
+      </div>
+
+    </div>
   </div>
 )}
-
 
 {showHowToPlay && (
   <div className="modal-overlay">
