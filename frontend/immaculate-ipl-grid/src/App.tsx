@@ -591,85 +591,26 @@ if (data.status !== "valid") {
         ×
       </button>
 
-    <h2>🧠 How to Play</h2>
-
-<p>
-Fill the 3×3 grid with IPL players who satisfy <strong>both</strong> the row and column condition.
-</p>
-
-<p>Each cell needs <strong>ONE</strong> player that satisfies:</p>
-
-<ul>
-  <li>The row requirement</li>
-  <li>The column requirement</li>
-</ul>
+    <p>Fill the 3×3 grid with players who satisfy <strong>both</strong> the row and column condition.</p>
 
 <h3>📌 Example</h3>
-
-<p>
-Row: <strong>Mumbai Indians</strong><br/>
-Column: <strong>India</strong>
-</p>
-
-<p><strong>👉 Sachin Tendulkar</strong> works because he:</p>
-
-<ul>
-  <li>Played for Mumbai Indians</li>
-  <li>Is from India</li>
-</ul>
-
-<p>He satisfies both conditions.</p>
+<p>Row: <strong>Mumbai Indians</strong> × Column: <strong>India</strong> → 👉 Sachin Tendulkar ✅</p>
 
 <h3>📊 Metric Example</h3>
-
-<p>
-Some grid conditions are <strong>metrics</strong> (achievements or statistics).
-</p>
-
-<p>
-Row: <strong>Century</strong><br/>
-Column: <strong>Rajasthan Royals</strong>
-</p>
-
-<p><strong>👉 Heinrich Klaasen</strong> is a valid answer because:</p>
-
-<ul>
-  <li>He has scored an IPL century</li>
-  <li>He has played for Rajasthan Royals</li>
-</ul>
-
-<p><strong>Read it like this:</strong></p>
-
-<p>
-Klaasen has scored a century <strong>AND</strong> played for Rajasthan Royals.
-</p>
-
-<p>
-It does <strong>NOT</strong> mean Klaasen scored a century <strong>while playing for Rajasthan Royals</strong>.
-</p>
-
-<p>
-⚠️ A player only needs to satisfy <strong>both conditions somewhere in their IPL career</strong>.
-</p>
+<p>Row: <strong>Century</strong> × Column: <strong>Rajasthan Royals</strong> → 👉 Heinrich Klaasen ✅</p>
+<p>This means Klaasen has scored an IPL century <strong>AND</strong> played for Rajasthan Royals — not necessarily at the same time.</p>
+<p>⚠️ A player only needs to satisfy both conditions <strong>somewhere in their IPL career</strong>.</p>
 
 <h3>🎯 Rules</h3>
-
 <ul>
-  <li>A player can be used only once in the grid</li>
-  <li>Your first 9 attempts determine your rarity score</li>
-  <li>You can keep solving after 9 attempts</li>
-  <li>Click <strong>Give Up</strong> to reveal answers</li>
+  <li>One player per cell, no repeats</li>
+  <li>First 9 attempts count toward your rarity score</li>
+  <li>You can keep going after 9 attempts</li>
+  <li>Click <strong>Give Up</strong> to see answers</li>
 </ul>
 
 <h3>⭐ Rarity Score</h3>
-
-<p>
-Lower score = rarer picks.
-</p>
-
-<p>
-Your score reflects how often your chosen players have been used historically.
-</p>
+<p>Lower = rarer picks. Based on how often your players have been chosen by others.</p>
 
     </div>
 
