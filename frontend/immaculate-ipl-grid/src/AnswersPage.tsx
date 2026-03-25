@@ -77,15 +77,9 @@ for (const key in ansData) {
   counts[key] = ansData[key].length
 }
 
-        console.log("GRID ANSWERS RESPONSE:", ansData)
-
-        
-
 for (const key in ansData) {
   counts[key] = ansData[key].length
 }
-
-console.log("COUNTS:", counts)
 
         // ✅ NO TRANSFORMATION — store directly
         setAnswers(ansData)

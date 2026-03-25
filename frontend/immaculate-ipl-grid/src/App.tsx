@@ -164,8 +164,6 @@ useEffect(() => {
 
     });
 
-    console.log("RARITY INPUT CELLS:", cells)
-
     const res = await fetch(`${BASE_URL}/rarity_score`, {
   method: "POST",
   headers: {
@@ -240,8 +238,6 @@ useEffect(() => {
 });
 
       const data = await response.json();
-
-      console.log("VALIDATE RESPONSE:", data);  
 
       if (data.status === "ambiguous") {
 
@@ -690,7 +686,6 @@ Your score reflects how often your chosen players have been used historically.
 }
 
 function App() {
-console.log("API URL:", import.meta.env.VITE_API_URL)
   return (
 
     <Routes>

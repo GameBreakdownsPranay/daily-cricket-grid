@@ -1,6 +1,4 @@
 export async function getActiveGrid() {
-  console.log("⚠ Running in FULL MOCK MODE");
-
   return {
     grid_id: 1,
     row_type: "metric",
