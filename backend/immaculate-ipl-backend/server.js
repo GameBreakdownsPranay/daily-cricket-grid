@@ -248,7 +248,7 @@ cols: grid.cols.map(v => ({
 
 /* ---------------- VALIDATION ---------------- */
 
-app.post("/validate", async (req, res) => {
+app.post("/validate", validateLimiter, async (req, res) => {
   const start = Date.now()
 
   const { grid_id, row_value, col_value } = req.body;
@@ -310,7 +310,7 @@ const col_idx = scheduleEntry.cols.indexOf(col_value)
 
 /* ---------------- COMPLETION ---------------- */
 
-app.post("/completion", async (req, res) => {
+app.post("/completion", validateLimiter, async (req, res) => {
 
   const { grid_id } = req.query
 
@@ -328,7 +328,7 @@ app.post("/completion", async (req, res) => {
 
 /* ---------------- GIVE UP ---------------- */
 
-app.post("/giveup", async (req, res) => {
+app.post("/giveup", validateLimiter, async (req, res) => {
 
   const { grid_id } = req.query
 
