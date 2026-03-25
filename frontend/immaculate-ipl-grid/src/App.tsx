@@ -130,7 +130,7 @@ useEffect(() => {
 }, []);
 
 useEffect(() => {
-  if (!GRID_ID) return;
+  if (GRID_ID === null || GRID_ID === undefined) return;
   const snapshot = {
     lockedCells,
     cellStatus,
