@@ -184,6 +184,8 @@ function getTodayGrid() {
     (nowIST - LAUNCH_DATE_IST) / (1000 * 60 * 60 * 24)
   )
 
+  if (diffDays < 0) return schedule[0]
+
   const index = diffDays % schedule.length
 
   return schedule[index]
