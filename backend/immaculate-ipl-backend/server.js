@@ -174,7 +174,7 @@ async function loadAxisRegistry() {
 
 /* ---------------- GET TODAY GRID ---------------- */
 
-const LAUNCH_DATE_IST = new Date("2026-01-01T00:00:00+05:30")
+const LAUNCH_DATE_IST = new Date("2026-03-26T00:00:00+05:30")
 
 function getTodayGrid() {
 
