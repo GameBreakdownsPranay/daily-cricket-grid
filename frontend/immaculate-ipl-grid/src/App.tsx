@@ -35,6 +35,7 @@ function GamePage() {
   const [showCompletionModal, setShowCompletionModal] = useState(false)
   const [gaveUp, setGaveUp] = useState(false)
   const [isGivingUp, setIsGivingUp] = useState(false);
+  const [hasFinalized, setHasFinalized] = useState(false);
 
   const navigate = useNavigate();
 
@@ -86,6 +87,7 @@ if (saved) {
   setGridComplete(s.gridComplete ?? false);
   setGaveUp(s.gaveUp ?? false);
   setRarityScore(s.rarityScore ?? null);
+  setHasFinalized(s.hasFinalized ?? false);
 }
 
     } catch (err) {
@@ -137,15 +139,16 @@ useEffect(() => {
     attemptsUsed,
     gridComplete,
     gaveUp,
-    rarityScore
+    rarityScore,
+    hasFinalized
   };
   localStorage.setItem(`cricket_grid_${GRID_ID}`, JSON.stringify(snapshot));
-}, [lockedCells, cellStatus, attemptsUsed, gridComplete, gaveUp, rarityScore, GRID_ID]);
+}, [lockedCells, cellStatus, attemptsUsed, gridComplete, gaveUp, rarityScore, hasFinalized, GRID_ID]);
 
 useEffect(() => {
 
   if (!gridComplete) return;
- if (rarityScore !== null) return;
+ if (hasFinalized) return;
   async function finalizeGame() {
 
     await fetch(`${BASE_URL}/completion?grid_id=${GRID_ID}`, {
@@ -179,12 +182,11 @@ useEffect(() => {
 
     setRarityScore(data.average_rarity);
     setShowCompletionModal(true);
+    setHasFinalized(true);
 
   }
 
   finalizeGame();
-
-finalizeGame();
 
 }, [gridComplete, rarityScore]);
 
