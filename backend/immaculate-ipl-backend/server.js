@@ -181,14 +181,14 @@ async function loadAxisRegistry() {
 
 /* ---------------- GET TODAY GRID ---------------- */
 
-const LAUNCH_DATE_IST = new Date("2026-03-26T00:00:00+05:30")
+const LAUNCH_DATE_UTC = new Date("2026-03-25T18:30:00Z")
 
 function getTodayGrid() {
 
-  const nowIST = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }))
+  const now = new Date()
 
   const diffDays = Math.floor(
-    (nowIST - LAUNCH_DATE_IST) / (1000 * 60 * 60 * 24)
+    (now - LAUNCH_DATE_UTC) / (1000 * 60 * 60 * 24)
   )
 
   if (diffDays < 0) return schedule[0]
