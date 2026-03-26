@@ -145,7 +145,7 @@ useEffect(() => {
 useEffect(() => {
 
   if (!gridComplete) return;
-
+ if (rarityScore !== null) return;
   async function finalizeGame() {
 
     await fetch(`${BASE_URL}/completion?grid_id=${GRID_ID}`, {
@@ -184,7 +184,9 @@ useEffect(() => {
 
   finalizeGame();
 
-}, [gridComplete]);
+finalizeGame();
+
+}, [gridComplete, rarityScore]);
 
 
 useEffect(() => {
