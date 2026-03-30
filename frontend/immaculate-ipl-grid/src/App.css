@@ -363,3 +363,45 @@ body {
   gap: 5px;
   justify-content: center;
 }
+
+/* ---------------- SUGGESTIONS DROPDOWN ---------------- */
+
+.suggestions-dropdown {
+  margin-top: 6px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-bottom: 1px solid #334155;
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+.suggestion-item:last-child {
+  border-bottom: none;
+}
+
+.suggestion-item:hover {
+  background: #273549;
+}
+
+.suggestion-item button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.suggestion-item button:hover {
+  background: #2563eb;
+}

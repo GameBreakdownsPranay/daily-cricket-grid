@@ -37,9 +37,14 @@ export default defineConfig({
       },
 
       "/rarity_score": {
-        target: "http://localhost:3000",
-        changeOrigin: true
-      }
+  target: "http://localhost:3000",
+  changeOrigin: true
+},
+
+"/players": {
+  target: "http://localhost:3000",
+  changeOrigin: true
+}
 
     }
   }

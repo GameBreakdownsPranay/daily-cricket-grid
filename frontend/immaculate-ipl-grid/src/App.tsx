@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./App.css";
 import { Routes, Route, useNavigate } from "react-router-dom"
 import AnswersPage from "./AnswersPage"
+import Fuse from "fuse.js";
 
 
 type CellStatus =
@@ -36,6 +37,9 @@ function GamePage() {
   const [gaveUp, setGaveUp] = useState(false)
   const [isGivingUp, setIsGivingUp] = useState(false);
   const [hasFinalized, setHasFinalized] = useState(false);
+  const [allPlayers, setAllPlayers] = useState<string[]>([]);
+  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [showSuggestions, setShowSuggestions] = useState(false);
 
   const navigate = useNavigate();
 
@@ -202,15 +206,42 @@ useEffect(() => {
       block: "center"
     });
   }, 200);
-
 }, [activeCell]);
 
-  const handleSubmit = async () => {
+useEffect(() => {
+  function handleClickOutside(e: MouseEvent) {
+    const dropdown = document.querySelector(".suggestions-dropdown");
+    const input = document.querySelector(".top-input-bar input");
+    if (
+      dropdown &&
+      !dropdown.contains(e.target as Node) &&
+      !input?.contains(e.target as Node)
+    ) {
+      setShowSuggestions(false);
+    }
+  }
+  document.addEventListener("mousedown", handleClickOutside);
+  return () => document.removeEventListener("mousedown", handleClickOutside);
+}, []);
 
-    if (!activeCell || isSubmitting) return;
+useEffect(() => {
+  async function loadPlayers() {
+    try {
+      const res = await fetch(`${BASE_URL}/players`);
+      const data = await res.json();
+      setAllPlayers(data);
+    } catch (err) {
+      console.error("Failed to load players", err);
+    }
+  }
+  loadPlayers();
+}, []);
 
-    const submittingCell = activeCell;
-    const trimmed = inputValue.trim();
+  const handleSubmit = async (overrideName?: string) => {
+  if (!activeCell || isSubmitting) return;
+
+  const submittingCell = activeCell;
+  const trimmed = (overrideName ?? inputValue).trim();
 
     if (!trimmed) {
       setErrorMessage("Enter a player name");
@@ -256,7 +287,6 @@ useEffect(() => {
 
   return;
 }
-
 
 if (data.status !== "valid") {
 
@@ -477,12 +507,46 @@ if (data.status !== "valid") {
             </div>
 
             <input
-              autoFocus
-              value={inputValue}
-              onChange={(e) => setInputValue(e.target.value)}
-              disabled={isSubmitting}
-            />
+  autoFocus
+  value={inputValue}
+  onChange={(e) => {
+    const val = e.target.value;
+    setInputValue(val);
 
+    if (val.trim().length < 2) {
+      setSuggestions([]);
+      setShowSuggestions(false);
+      return;
+    }
+
+    const fuse = new Fuse(allPlayers, { threshold: 0.4 });
+    const results = fuse.search(val).slice(0, 6).map(r => r.item);
+    setSuggestions(results);
+    setShowSuggestions(results.length > 0);
+  }}
+  disabled={isSubmitting}
+/>
+
+{showSuggestions && (
+  <div className="suggestions-dropdown">
+    {suggestions.map((name) => (
+      <div key={name} className="suggestion-item">
+        <span>{name}</span>
+        <button
+          type="button"
+          onClick={async () => {
+            setInputValue(name);
+            setSuggestions([]);
+            setShowSuggestions(false);
+            await handleSubmit(name);
+          }}
+        >
+          Select
+        </button>
+      </div>
+    ))}
+  </div>
+)}
           </form>
 
         )}
