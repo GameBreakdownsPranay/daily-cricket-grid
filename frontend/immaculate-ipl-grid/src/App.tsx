@@ -407,7 +407,32 @@ if (data.status !== "valid") {
 
       <div className="content">
 
-        {!grid && <div>Loading grid...</div>}
+        {!grid && (
+  <div style={{ width: "94%", maxWidth: "520px", margin: "20px auto 0" }}>
+    <style>{`
+      @keyframes shimmer {
+        0% { opacity: 0.4; }
+        50% { opacity: 0.8; }
+        100% { opacity: 0.4; }
+      }
+      .skeleton-block {
+        background: #1e293b;
+        border-radius: 8px;
+        animation: shimmer 1.4s ease-in-out infinite;
+      }
+    `}</style>
+    <div style={{ display: "grid", gridTemplateColumns: "90px repeat(3, minmax(0, 1fr))", gap: "6px" }}>
+      <div className="skeleton-block" style={{ aspectRatio: "1/1" }} />
+      {[0,1,2].map(i => <div key={i} className="skeleton-block" style={{ aspectRatio: "1/1" }} />)}
+      {[0,1,2].map(r => (
+        <>
+          <div key={`r${r}`} className="skeleton-block" style={{ aspectRatio: "1/1" }} />
+          {[0,1,2].map(c => <div key={`c${c}`} className="skeleton-block" style={{ aspectRatio: "1/1" }} />)}
+        </>
+      ))}
+    </div>
+  </div>
+)}
 
         <div className="top-info">
 
