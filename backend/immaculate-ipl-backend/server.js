@@ -400,6 +400,21 @@ app.get("/grid_answers", async (req, res) => {
   res.json(data)
 })
 
+
+/* ---------------- PLAYERS LIST ---------------- */
+
+app.get("/players", async (req, res) => {
+  const { data, error } = await supabase
+    .from("player_base")
+    .select("player_name")
+
+  if (error) {
+    return res.status(500).json({ error: error.message })
+  }
+
+  res.json(data.map(p => p.player_name))
+})
+
 /* ---------------- START SERVER ---------------- */
 
 async function startServer() {
