@@ -348,6 +348,24 @@ app.post("/giveup", validateLimiter, async (req, res) => {
 
 })
 
+/* ---------------- SHARE ---------------- */
+
+app.post("/share", async (req, res) => {
+
+  const { grid_id } = req.query
+
+  const { error } = await supabase.rpc("increment_share", {
+    p_grid_id: grid_id
+  })
+
+  if (error) {
+    return res.status(500).json({ error: error.message })
+  }
+
+  res.json({ success: true })
+
+})
+
 /* ---------------- RARITY SCORE ---------------- */
 
 app.post("/rarity_score", async (req, res) => {
