@@ -36,6 +36,10 @@ app.use(cors({
 
 app.use(express.json());
 
+app.get("/ping", (req, res) => {
+  res.json({ status: "ok" })
+})
+
 /* ---------------- RATE LIMIT ---------------- */
 
 const validateLimiter = rateLimit({
