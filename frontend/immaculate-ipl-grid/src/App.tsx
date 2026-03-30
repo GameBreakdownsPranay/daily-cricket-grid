@@ -355,6 +355,7 @@ if (data.status !== "valid") {
   };
 
   const shareGrid = async () => {
+    await fetch(`${BASE_URL}/share?grid_id=${GRID_ID}`, { method: "POST" });
 
     let output = `Daily Cricket Grid - IPL Edition #${GRID_ID + 1}\n`;
     output += `Score: ${rarityScore ?? "-"}\n\n`;
