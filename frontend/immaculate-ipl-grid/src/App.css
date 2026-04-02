@@ -290,12 +290,8 @@ body {
 }
 
 .cell.incorrect {
-  background-color: #5c1a1a;
-  border: 1px solid #ff4d4d;
-}
-
-.cell.incorrect {
-  background: red !important;
+  background: #713f12 !important;
+  border: 2px solid #ca8a04 !important;
 }
 
 .error-message {

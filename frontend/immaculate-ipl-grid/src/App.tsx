@@ -37,6 +37,7 @@ function GamePage() {
   const [gaveUp, setGaveUp] = useState(false)
   const [isGivingUp, setIsGivingUp] = useState(false);
   const [hasFinalized, setHasFinalized] = useState(false);
+  const [cellScoredInTime, setCellScoredInTime] = useState<Record<string, boolean>>({});
   const [allPlayers, setAllPlayers] = useState<string[]>([]);
   const [suggestions, setSuggestions] = useState<string[]>([]);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -81,17 +82,20 @@ useEffect(() => {
   setGridComplete(false);
   setGaveUp(false);
   setRarityScore(null);
+  setHasFinalized(false);
+  setCellScoredInTime({});
 }
       const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
 if (saved) {
   const s = JSON.parse(saved);
   setLockedCells(s.lockedCells ?? {});
-  setCellStatus(s.cellStatus ?? {});
-  setAttemptsUsed(s.attemptsUsed ?? 0);
-  setGridComplete(s.gridComplete ?? false);
-  setGaveUp(s.gaveUp ?? false);
-  setRarityScore(s.rarityScore ?? null);
-  setHasFinalized(s.hasFinalized ?? false);
+setCellStatus(s.cellStatus ?? {});
+setAttemptsUsed(s.attemptsUsed ?? 0);
+setGridComplete(s.gridComplete ?? false);
+setGaveUp(s.gaveUp ?? false);
+setRarityScore(s.rarityScore ?? null);
+setHasFinalized(s.hasFinalized ?? false);
+setCellScoredInTime(s.cellScoredInTime ?? {});
 }
 
     } catch (err) {
@@ -138,14 +142,15 @@ useEffect(() => {
 useEffect(() => {
   if (GRID_ID === null || GRID_ID === undefined) return;
   const snapshot = {
-    lockedCells,
-    cellStatus,
-    attemptsUsed,
-    gridComplete,
-    gaveUp,
-    rarityScore,
-    hasFinalized
-  };
+  lockedCells,
+  cellStatus,
+  attemptsUsed,
+  gridComplete,
+  gaveUp,
+  rarityScore,
+  hasFinalized,
+  cellScoredInTime
+};
   localStorage.setItem(`cricket_grid_${GRID_ID}`, JSON.stringify(snapshot));
 }, [lockedCells, cellStatus, attemptsUsed, gridComplete, gaveUp, rarityScore, hasFinalized, GRID_ID]);
 
@@ -281,6 +286,11 @@ useEffect(() => {
     [submittingCell]: "ambiguous"
   }));
 
+  setCellScoredInTime(prev => ({
+  ...prev,
+  [submittingCell]: attemptsUsed < 9
+}));
+
   setErrorMessage("Multiple players match that name. Try a full name.");
 
   setAttemptsUsed(prev => prev + 1);
@@ -332,6 +342,11 @@ if (data.status !== "valid") {
         [submittingCell]: "locked"
       }));
 
+      setCellScoredInTime(prev => ({
+  ...prev,
+  [submittingCell]: attemptsUsed < 9
+}));
+
       setAttemptsUsed(prev => prev + 1);
 
       setActiveCell(null);
@@ -355,31 +370,38 @@ if (data.status !== "valid") {
   };
 
   const shareGrid = async () => {
-    await fetch(`${BASE_URL}/share?grid_id=${GRID_ID}`, { method: "POST" });
+  await fetch(`${BASE_URL}/share?grid_id=${GRID_ID}`, { method: "POST" });
 
-    let output = `Daily Cricket Grid - IPL Edition #${GRID_ID + 1}\n`;
-    output += `Score: ${rarityScore ?? "-"}\n\n`;
+  const isPerfectGrid = attemptsUsed === 9 && Object.keys(lockedCells).length === 9;
 
-    for (let r = 0; r < 3; r++) {
+  let output = "";
 
-      let rowStr = "";
+  if (isPerfectGrid) {
+    output += `I got a perfect grid today! Can you get one?\n\n`;
+  }
 
-      for (let c = 0; c < 3; c++) {
+  output += `Daily Cricket Grid - IPL Edition #${GRID_ID + 1}\n`;
+  output += `Score: ${rarityScore ?? "-"}\n\n`;
 
-        const key = `${r}-${c}`;
-        rowStr += lockedCells[key] ? "🟩" : "⬜";
-
+  for (let r = 0; r < 3; r++) {
+    let rowStr = "";
+    for (let c = 0; c < 3; c++) {
+      const key = `${r}-${c}`;
+      if (!lockedCells[key]) {
+        rowStr += "⬜";
+      } else if (cellScoredInTime[key]) {
+        rowStr += "🟩";
+      } else {
+        rowStr += "🟦";
       }
-
-      output += rowStr + "\n";
-
     }
-    output += `\nPlay today's grid: ${window.location.origin}`;
-    await navigator.clipboard.writeText(output);
+    output += rowStr + "\n";
+  }
 
-    alert("Result copied to clipboard!");
-
-  };
+  output += `\nPlay today's grid: ${window.location.origin}`;
+  await navigator.clipboard.writeText(output);
+  alert("Result copied to clipboard!");
+};
 
   const remainingAttempts = Math.max(0, RARITY_TURNS - attemptsUsed);
 
