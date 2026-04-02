@@ -317,6 +317,7 @@ const col_idx = scheduleEntry.cols.indexOf(col_value)
 app.post("/completion", validateLimiter, async (req, res) => {
 
   const { grid_id } = req.query
+  if (DEV_MODE) return res.json({ success: true, dev: true })
 
   const { data, error } = await supabase.rpc("increment_completion", {
     p_grid_id: grid_id
@@ -335,6 +336,7 @@ app.post("/completion", validateLimiter, async (req, res) => {
 app.post("/giveup", validateLimiter, async (req, res) => {
 
   const { grid_id } = req.query
+  if (DEV_MODE) return res.json({ success: true, dev: true })
 
   const { error } = await supabase.rpc("increment_giveup", {
     p_grid_id: grid_id
@@ -353,6 +355,7 @@ app.post("/giveup", validateLimiter, async (req, res) => {
 app.post("/share", async (req, res) => {
 
   const { grid_id } = req.query
+  if (DEV_MODE) return res.json({ success: true, dev: true })
 
   const { error } = await supabase.rpc("increment_share", {
     p_grid_id: grid_id
@@ -371,6 +374,7 @@ app.post("/share", async (req, res) => {
 app.post("/rarity_score", async (req, res) => {
 
   const { grid_id, cells } = req.body
+  if (DEV_MODE) return res.json({ average_rarity: 100, first_solver: false, dev: true })
 
   const { data, error } = await supabase.rpc("get_rarity_score", {
     p_grid_id: grid_id,
