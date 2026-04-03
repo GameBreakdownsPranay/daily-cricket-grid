@@ -398,7 +398,7 @@ if (data.status !== "valid") {
       } else if (cellScoredInTime[key]) {
         rowStr += "🟩";
       } else {
-        rowStr += "🟦";
+        rowStr += "🟧";
       }
     }
     output += rowStr + "\n";
@@ -663,7 +663,7 @@ if (data.status !== "valid") {
 
                     <div
                       key={cellKey}
-                      className={`cell ${value ? "correct" : ""}`}
+                      className={`cell ${value ? (cellScoredInTime[cellKey] ? "correct" : "late") : ""}`}
                       onClick={() => {
 
                         if (lockedCells[cellKey]) return;
