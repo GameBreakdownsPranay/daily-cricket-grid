@@ -37,6 +37,8 @@ function GamePage() {
   const [gaveUp, setGaveUp] = useState(false)
   const [isGivingUp, setIsGivingUp] = useState(false);
   const [hasFinalized, setHasFinalized] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [retryKey, setRetryKey] = useState(0);
   const [cellScoredInTime, setCellScoredInTime] = useState<Record<string, boolean>>({});
   const [allPlayers, setAllPlayers] = useState<string[]>([]);
   const [suggestions, setSuggestions] = useState<string[]>([]);
@@ -61,54 +63,58 @@ const rows = grid?.rows ?? [];
 useEffect(() => {
 
   async function loadGrid() {
+  setLoadError(false);
 
-    try {
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 8000);
 
-      let url = `${BASE_URL}/grid`;
+  try {
+    let url = `${BASE_URL}/grid`;
 
-      if (DEV_MODE && gridId !== null) {
-        url = `${BASE_URL}/grid?grid_id=${gridId}`;
-      }
-
-      const res = await fetch(url);
-      const data = await res.json();
-
-      setGrid(data);
-      if (gridId === null) setGridId(data.grid_id);
-      if (DEV_MODE) {
-  setLockedCells({});
-  setCellStatus({});
-  setAttemptsUsed(0);
-  setGridComplete(false);
-  setGaveUp(false);
-  setRarityScore(null);
-  setHasFinalized(false);
-  setCellScoredInTime({});
-}
-      const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
-if (saved) {
-  const s = JSON.parse(saved);
-  setLockedCells(s.lockedCells ?? {});
-setCellStatus(s.cellStatus ?? {});
-setAttemptsUsed(s.attemptsUsed ?? 0);
-setGridComplete(s.gridComplete ?? false);
-setGaveUp(s.gaveUp ?? false);
-setRarityScore(s.rarityScore ?? null);
-setHasFinalized(s.hasFinalized ?? false);
-setCellScoredInTime(s.cellScoredInTime ?? {});
-}
-
-    } catch (err) {
-
-      console.error("Grid load failed", err);
-
+    if (DEV_MODE && gridId !== null) {
+      url = `${BASE_URL}/grid?grid_id=${gridId}`;
     }
 
+    const res = await fetch(url, { signal: controller.signal });
+
+    if (!res.ok) throw new Error("Grid fetch failed");
+
+    const data = await res.json();
+
+    setGrid(data);
+    if (gridId === null) setGridId(data.grid_id);
+    if (DEV_MODE) {
+      setLockedCells({});
+      setCellStatus({});
+      setAttemptsUsed(0);
+      setGridComplete(false);
+      setGaveUp(false);
+      setRarityScore(null);
+    }
+
+    const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
+    if (saved) {
+      const s = JSON.parse(saved);
+      setLockedCells(s.lockedCells ?? {});
+      setCellStatus(s.cellStatus ?? {});
+      setAttemptsUsed(s.attemptsUsed ?? 0);
+      setGridComplete(s.gridComplete ?? false);
+      setGaveUp(s.gaveUp ?? false);
+      setRarityScore(s.rarityScore ?? null);
+      setHasFinalized(s.hasFinalized ?? false);
+    }
+
+  } catch (err) {
+    console.error("Grid load failed", err);
+    setLoadError(true);
+  } finally {
+    clearTimeout(timeout);
   }
+}
 
   loadGrid();
 
-}, [gridId]);
+}, [gridId, retryKey]);
 
 useEffect(() => {
 
@@ -430,7 +436,7 @@ if (data.status !== "valid") {
 
       <div className="content">
 
-        {!grid && (
+        {!grid && !loadError && (
   <div style={{ width: "94%", maxWidth: "520px", margin: "20px auto 0" }}>
     <style>{`
       @keyframes shimmer {
@@ -454,6 +460,31 @@ if (data.status !== "valid") {
         </>
       ))}
     </div>
+  </div>
+)}
+{loadError && (
+  <div style={{ textAlign: "center", marginTop: "40px" }}>
+    <p style={{ color: "#f87171", marginBottom: "10px" }}>
+      Bowled over by traffic! Failed to load the grid.
+    </p>
+    <button
+      onClick={() => {
+        setLoadError(false);
+        setGrid(null);
+        setRetryKey(prev => prev + 1);
+      }}
+      style={{
+        padding: "10px 20px",
+        backgroundColor: "#3b82f6",
+        color: "white",
+        border: "none",
+        borderRadius: "8px",
+        cursor: "pointer",
+        fontSize: "14px"
+      }}
+    >
+      Retry
+    </button>
   </div>
 )}
 
