@@ -62,11 +62,11 @@ const rows = grid?.rows ?? [];
 
 useEffect(() => {
 
-  async function loadGrid() {
-  setLoadError(false);
-
   const controller = new AbortController();
   const timeout = setTimeout(() => controller.abort(), 15000);
+
+  async function loadGrid() {
+  setLoadError(false);
 
   try {
     let url = `${BASE_URL}/grid`;
@@ -105,14 +105,19 @@ useEffect(() => {
     }
 
   } catch (err) {
+    if ((err as Error).name !== "AbortError") {
+      setLoadError(true);
+    }
     console.error("Grid load failed", err);
-    setLoadError(true);
-  } finally {
-    clearTimeout(timeout);
   }
 }
 
-  loadGrid();
+loadGrid();
+
+  return () => {
+    clearTimeout(timeout);
+    controller.abort();
+  };
 
 }, [gridId, retryKey]);
 
