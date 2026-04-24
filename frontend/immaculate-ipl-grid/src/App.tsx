@@ -61,65 +61,76 @@ const columns = grid?.cols ?? [];
 const rows = grid?.rows ?? [];
 
 useEffect(() => {
+    let isMounted = true;
 
-  const controller = new AbortController();
-  const timeout = setTimeout(() => controller.abort(), 15000);
+    async function loadGridWithRetry(retries = 3) {
+      setLoadError(false);
 
-  async function loadGrid() {
-  setLoadError(false);
+      for (let i = 0; i < retries; i++) {
+        // Create a new controller for EVERY try
+        const controller = new AbortController();
+        const timeout = setTimeout(() => controller.abort(), 20000); 
 
-  try {
-    let url = `${BASE_URL}/grid`;
+        try {
+          let url = `${BASE_URL}/grid`;
+          if (DEV_MODE && gridId !== null) {
+            url = `${BASE_URL}/grid?grid_id=${gridId}`;
+          }
 
-    if (DEV_MODE && gridId !== null) {
-      url = `${BASE_URL}/grid?grid_id=${gridId}`;
+          const res = await fetch(url, { signal: controller.signal });
+          clearTimeout(timeout);
+
+          if (!res.ok) throw new Error("Fetch failed");
+
+          const data = await res.json();
+          if (!isMounted) return;
+
+          // SUCCESS: Set all your data
+          setGrid(data);
+          if (gridId === null) setGridId(data.grid_id);
+          
+          if (DEV_MODE) {
+            setLockedCells({});
+            setCellStatus({});
+            setAttemptsUsed(0);
+            setGridComplete(false);
+            setGaveUp(false);
+            setRarityScore(null);
+          }
+
+          const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
+          if (saved) {
+            const s = JSON.parse(saved);
+            setLockedCells(s.lockedCells ?? {});
+            setCellStatus(s.cellStatus ?? {});
+            setAttemptsUsed(s.attemptsUsed ?? 0);
+            setGridComplete(s.gridComplete ?? false);
+            setGaveUp(s.gaveUp ?? false);
+            setRarityScore(s.rarityScore ?? null);
+            setHasFinalized(s.hasFinalized ?? false);
+          }
+          
+          return; // STOP everything once we succeed!
+
+        } catch (err) {
+          clearTimeout(timeout);
+          console.warn(`Attempt ${i + 1} failed...`);
+          
+          if (i === retries - 1) {
+            // Only after the 3rd fail do we show the error message
+            if (isMounted) setLoadError(true);
+          } else {
+            // Wait 1.5 seconds before trying again
+            await new Promise(r => setTimeout(r, 1500));
+          }
+        }
+      }
     }
 
-    const res = await fetch(url, { signal: controller.signal });
+    loadGridWithRetry();
 
-    if (!res.ok) throw new Error("Grid fetch failed");
-
-    const data = await res.json();
-
-    setGrid(data);
-    if (gridId === null) setGridId(data.grid_id);
-    if (DEV_MODE) {
-      setLockedCells({});
-      setCellStatus({});
-      setAttemptsUsed(0);
-      setGridComplete(false);
-      setGaveUp(false);
-      setRarityScore(null);
-    }
-
-    const saved = localStorage.getItem(`cricket_grid_${data.grid_id}`);
-    if (saved) {
-      const s = JSON.parse(saved);
-      setLockedCells(s.lockedCells ?? {});
-      setCellStatus(s.cellStatus ?? {});
-      setAttemptsUsed(s.attemptsUsed ?? 0);
-      setGridComplete(s.gridComplete ?? false);
-      setGaveUp(s.gaveUp ?? false);
-      setRarityScore(s.rarityScore ?? null);
-      setHasFinalized(s.hasFinalized ?? false);
-    }
-
-  } catch (err) {
-    if ((err as Error).name !== "AbortError") {
-      setLoadError(true);
-    }
-    console.error("Grid load failed", err);
-  }
-}
-
-loadGrid();
-
-  return () => {
-    clearTimeout(timeout);
-    controller.abort();
-  };
-
-}, [gridId, retryKey]);
+    return () => { isMounted = false; };
+  }, [gridId, retryKey]);
 
 useEffect(() => {
 
