@@ -706,6 +706,19 @@ if (data.status !== "valid") {
           </div>
 
         </div>
+        
+        {/* Play Store Cross-Promo */}
+        <div className="playstore-promo">
+          <p className="promo-text">From the same creator</p>
+          <a href="https://play.google.com/store/apps/details?id=com.psi1.monumentvault" target="_blank" rel="noopener noreferrer">
+            <img
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Get it on Google Play"
+              className="playstore-badge"
+            />
+          </a>
+          <p className="promo-subtext">Monument Vault — Discover monuments with beautiful visuals, fascinating facts &amp; soothing music</p>
+        </div>
 
 {showCompletionModal && (
   <div className="modal-overlay" style={{ alignItems: "flex-start", paddingTop: "35vh", justifyContent: "center", width: "100%" }}>
